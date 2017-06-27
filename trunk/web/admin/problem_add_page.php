@@ -31,22 +31,12 @@ include_once("kindeditor.php") ;
 
 </p>
 
-<p align=left>Input:<br>
-<textarea  class="kindeditor" rows=13 name=input cols=80></textarea>
-
-</p>
-
-</p>
-<p align=left>Output:<br>
-<textarea  class="kindeditor" rows=13 name=output cols=80></textarea>
-
-
-
-</p>
-<p align=left>Sample Input:<br><textarea  class="input input-xxlarge"  rows=13 name=sample_input cols=80></textarea></p>
-<p align=left>Sample Output:<br><textarea  class="input input-xxlarge"  rows=13 name=sample_output cols=80></textarea></p>
-<p align=left>Test Input:<br><textarea  class="input input-xxlarge" rows=13 name=test_input cols=80></textarea></p>
-<p align=left>Test Output:<br><textarea  class="input input-xxlarge"  rows=13 name=test_output cols=80></textarea></p>
+<p align=left>Input:<br> <textarea class="input input-xxlarge" rows=8 name=input cols=80></textarea> </p>
+<p align=left>Output:<br> <textarea  class="input input-xxlarge" rows=8 name=output cols=80></textarea> </p>
+<p align=left>Sample Input:<br><textarea  class="input input-xxlarge"  rows=8 name=sample_input cols=80></textarea></p>
+<p align=left>Sample Output:<br><textarea  class="input input-xxlarge"  rows=8 name=sample_output cols=80></textarea></p>
+<p align=left>Test Input:<br><textarea  class="input input-xxlarge" rows=8 name=test_input cols=80></textarea></p>
+<p align=left>Test Output:<br><textarea  class="input input-xxlarge"  rows=8 name=test_output cols=80></textarea></p>
 <p align=left>Hint:<br>
 <textarea class="kindeditor" rows=13 name=hint cols=80></textarea>
 </p>
