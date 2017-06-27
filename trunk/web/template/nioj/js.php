@@ -3,6 +3,9 @@
 
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="<?php echo $path_fix."template/$OJ_TEMPLATE/"?>bootstrap.min.js"></script>
+<script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="http://g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js"></script>
+
 
 <?php
 if(file_exists("./admin/msg.txt"))
