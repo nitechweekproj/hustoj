@@ -1,6 +1,7 @@
 @import url(../bootstrap/css/bootstrap.css);
 input{
    height:24px;
+   margin: 0 2px 0 5px;
 }
 a {
     color: #1A5CC8;
@@ -185,4 +186,7 @@ div.content {
 #logo {
     position: static;
     vertical-align: middle;
+}
+form p{
+    margin: 3px 0 0 15px;
 }
