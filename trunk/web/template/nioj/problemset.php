@@ -42,7 +42,7 @@ for ($i=$start;$i<=$end;$i++){
 <li class="page-item"><a href="problemset.php?page=<?php echo $view_total_page?>">&gt;&gt;</a></li>
 </ul></nav>
 
-<table>
+<table class="sui-table table-zebra">
 <tr align='center' class='evenrow'><td width='5'></td>
 <td  colspan='1'>
 <form class=form-inline action=problem.php>
