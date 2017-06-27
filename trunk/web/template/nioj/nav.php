@@ -36,6 +36,9 @@
               <li  class="active" ><a href="<?php echo $path_fix?>status.php?cid=<?php echo $cid?>">
         <?php echo $MSG_INTERVIEWSTATUS?>
               </a></li>
+              <li class="active" ><a href="<?php echo $path_fix?>contest.php?cid=<?php echo $cid?>">
+        <?php echo $MSG_PROBLEMS?>
+              </a></li>
         <?php }?>
 
             </ul>
