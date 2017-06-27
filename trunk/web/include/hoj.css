@@ -190,3 +190,20 @@ div.content {
 form p{
     margin: 3px 0 0 15px;
 }
+.wrap {
+    width: 100%;
+}
+
+.floatleft {
+    float:left; 
+    width: 80%;
+    background-color: white;
+    height: 400px;
+}
+
+.floatright {
+float: right;
+    background-color: white;
+    height: 400px;
+    width: 20%;
+}
