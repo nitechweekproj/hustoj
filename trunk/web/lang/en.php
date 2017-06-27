@@ -3,11 +3,11 @@
 	$MSG_FAQ="F.A.Qs";
 	$MSG_BBS="Web Board";
 	$MSG_HOME="Home";
-	$MSG_PROBLEMS="ProblemSet";
-	$MSG_STATUS="Status";
+	$MSG_PROBLEMS="Problem Set";
+	$MSG_STATUS="OJ Status";
+	$MSG_INTERVIEWSTATUS="Interview Status";
 	$MSG_RANKLIST="Ranklist";
-	$MSG_CONTEST="Contest";
-	$MSG_EXAM="Interview Questions";
+	$MSG_CONTEST="Onsite Interview";
   	$MSG_RECENT_CONTEST="Recent";
 	$MSG_LOGOUT="Logout";
 	$MSG_LOGIN="Login";
