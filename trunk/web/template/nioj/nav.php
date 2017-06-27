@@ -23,10 +23,12 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
 	      <?php $ACTIVE="class='active'"?>
+            <?php if (isset($_SESSION['administrator'])) {?>
               <li <?php if ($url=="problemset.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>problemset.php"><?php echo $MSG_PROBLEMS?></a></li>
               <li <?php if ($url=="status.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>status.php"><?php echo $MSG_STATUS?></a></li>
-              <li <?php if ($url=="faqs.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>faqs.php"><?php echo $MSG_FAQ?></a></li>
+            <?php }?>
               <li <?php if ($url=="contest.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>contest.php"><?php echo $MSG_CONTEST?></a></li>
+              <li <?php if ($url=="faqs.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>faqs.php"><?php echo $MSG_FAQ?></a></li>
 
         <?php if(isset($_GET['cid'])){
           $cid=intval($_GET['cid']);
