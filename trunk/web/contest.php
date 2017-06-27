@@ -18,7 +18,7 @@
 		$second = $length % 60;
 		if ($second > 0)
 		{
-			$result = $second . '秒';
+			$result = $second . 's';
 		}
 		$length = floor($length / 60);
 		if ($length >= 60)
@@ -28,12 +28,12 @@
 			{
 				if ($result != '')
 				{
-					$result = '0分' . $result;
+					$result = '0m' . $result;
 				}
 			}
 			else
 			{
-				$result = $minute . '分' . $result;
+				$result = $minute . 'm' . $result;
 			}
 			$length = floor($length / 60);
 			if ($length >= 24)
@@ -43,29 +43,29 @@
 				{
 					if ($result != '')
 					{
-						$result = '0小时' . $result;
+						$result = '0h' . $result;
 					}
 				}
 				else
 				{
-					$result = $hour . '小时' . $result;
+					$result = $hour . 'h' . $result;
 				}
 				$length = floor($length / 24);
-				$result = $length . '天' . $result;
+				$result = $length . 'd' . $result;
 			}
 			else
 			{
-				$result = $length . '小时' . $result;
+				$result = $length . 'h' . $result;
 			}
 		}
 		else
 		{
-			$result = $length . '分' . $result;
+			$result = $length . 'm' . $result;
 		}
 	}
 	else
 	{
-		$result = $length . '秒';
+		$result = $length . 's';
 	}
 	return $result;
 }
@@ -168,9 +168,10 @@
       }
   }
   if(strlen($mycontests)>0) $mycontests=substr($mycontests,1);
-//  echo "$mycontests";
+
   $wheremy="";
-  if(isset($_GET['my'])) $wheremy=" and contest_id in ($mycontests)";
+  //if(isset($_GET['my'])) $wheremy=" and contest_id in ($mycontests)";
+  $wheremy=" and contest_id in ($mycontests)";
 
 
   $sql="SELECT * FROM `contest` WHERE `defunct`='N' ORDER BY `contest_id` DESC limit 1000";
