@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <title>新建待办事项</title>
-  <?php require("template/$OJ_TEMPLATE/css_test.php");?>
-  <?php require("template/$OJ_TEMPLATE/js_test.php");?> 
+  <?php require("template/nioj/css_test.php");?>
+  <?php require("template/nioj/js_test.php");?> 
 </head>
 <body>
   <div class="sui-container">
