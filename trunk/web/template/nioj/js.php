@@ -3,9 +3,6 @@
 
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="<?php echo $path_fix."template/$OJ_TEMPLATE/"?>bootstrap.min.js"></script>
-<script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="http://g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js"></script>
-
 
 <?php
 if(file_exists("./admin/msg.txt"))
@@ -26,8 +23,7 @@ $(document).ready(function(){
   $(".jumbotron").prepend(msg);
   $("form").append("<div id='csrf' />");
   $("#csrf").load("<?php echo $path_fix?>csrf.php");
-  $("body").append("<div id=footer class=center >GPLv2 licensed by <a href='https://github.com/zhblue/hustoj' >HUSTOJ</a> "+(new Date()).getFullYear()+" </div>");
-  $("body").append("<div class=center ><a href='https://www.duba.com/?un_454974_116387' title='每天点击一次开发者可获得￥0.06' target='_blank'>捐助系统开发者</a></div>");
+  $("body").append("<div id=footer class=center >GPLv2 licensed by HUSTOJ "+(new Date()).getFullYear()+" </div>");
 });
 
 </script>
