@@ -11,7 +11,9 @@ a:hover {
     text-decoration: underline;
 }
 h2 {
-    color: blue;
+    font-family: Arial;
+    color: black;
+    text-align: center;
 }
 #wrapper {
     width: 95%;

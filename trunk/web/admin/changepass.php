@@ -23,7 +23,7 @@ if(isset($_POST['do'])){
 }
 ?>
 <form action='changepass.php' method=post>
-	<b>Change Password:</b><br />
+	<h2>Change Password</h2><br />
 	User:<input type=text size=10 name="user_id"><br />
 	Pass:<input type=text size=10 name="passwd"><br />
 	<?php require_once("../include/set_post_key.php");?>
