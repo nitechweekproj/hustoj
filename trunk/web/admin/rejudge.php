@@ -48,7 +48,7 @@ if (!(isset($_SESSION['administrator']))){
 
 }
 ?>
-<b>Rejudge</b>
+<h2>Rejudge</h2>
 	<ol>
 	<li>Problem
 	<form action='rejudge.php' method=post>
