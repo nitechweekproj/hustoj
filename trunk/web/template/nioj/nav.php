@@ -23,7 +23,7 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
 	      <?php $ACTIVE="class='active'"?>
-            <?php if (isset($_SESSION['administrator'])) {?>
+            <?php if(isset($_SESSION['administrator'])) {?>
               <li <?php if ($url=="problemset.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>problemset.php"><?php echo $MSG_PROBLEMS?></a></li>
               <li <?php if ($url=="status.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>status.php"><?php echo $MSG_STATUS?></a></li>
             <?php }?>
