@@ -9,7 +9,7 @@
 static 	$DB_HOST="localhost";
 static 	$DB_NAME="jol";
 static 	$DB_USER="root";
-static 	$DB_PASS="root";
+static 	$DB_PASS="w3L(0m3t3st";
 
 static 	$OJ_NAME="NIOnlineTest";
 static 	$OJ_HOME="./";
