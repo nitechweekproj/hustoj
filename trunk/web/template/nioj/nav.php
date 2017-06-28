@@ -24,11 +24,15 @@
 
           <?php if(isset($_GET['cid'])){
             $cid=intval($_GET['cid']);
+            $contest_tab="contest.php?cid="
+            $status_tab="status.php?cid="
+            $contest_tab .= $cid
+            $status_tab .= $cid
           ?>
-                <li <?php if ($url == "contest.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>contest.php?cid=<?php echo $cid?>">
-                  <?php echo $url?>
+                <li <?php if ($url == $contest_tab) echo " $ACTIVE";?>><a href="<?php echo $path_fix?>contest.php?cid=<?php echo $cid?>">
+                  <?php echo $MSG_CONTEST?>
                 </a></li>
-                <li <?php if ($url == "status.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>status.php?cid=<?php echo $cid?>">
+                <li <?php if ($url == $status_tab) echo " $ACTIVE";?>><a href="<?php echo $path_fix?>status.php?cid=<?php echo $cid?>">
                   <?php echo $MSG_INTERVIEWSTATUS?>
                 </a></li>
           <?php }?>
