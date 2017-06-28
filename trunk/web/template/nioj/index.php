@@ -24,7 +24,7 @@
     <div class="sui-container">
     <?php include("template/$OJ_TEMPLATE/nav.php");?>	    
     </div> <!-- /container -->
-    <div class="jumbotron">
+    <div class="brand-intro">
       <div class="sui-container">
         <h1> Welcome to National Instruments onsite programming test</h1>
         <p class="sui-lead">Login to the system with the user name and password given by the interviewer</p>
