@@ -27,7 +27,7 @@
 		foreach ($result as $row)
 			$_SESSION[$row['rightstr']]=true;
 		echo "<script language='javascript'>\n";
-		echo "window.location.href=\"contest.php\"\n";
+		echo "window.location.href=\"index.php\"\n";
 		echo "</script>";
 	}else{
 		
