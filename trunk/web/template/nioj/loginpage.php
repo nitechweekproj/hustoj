@@ -21,11 +21,7 @@
 
   <body>
     <?php include("template/$OJ_TEMPLATE/nav.php");?>	
-    <div class="sui-container">    
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-      </div>
-
+    <div class="sui-container">  
       <form action="login.php" method="post" role="form" class="sui-form form-horizontal">
       	<div class="control-group">
           <label class="control-label"><?php echo $MSG_USER_ID?></label>
@@ -47,7 +43,6 @@
       	  <a class="sui-btn" href="lostpassword.php"><?php echo $MSG_LOST_PASSWORD; ?></a>
       	</div>
       </form>				
-
     </div> <!-- /container -->
 
 
