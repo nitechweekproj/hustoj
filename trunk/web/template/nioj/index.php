@@ -55,6 +55,6 @@
       </div>
     </div>
     <!-- Placed at the end of the document so the pages load faster -->
-    <?php if(!isset($_SESSION['administrator'])) include("template/$OJ_TEMPLATE/js.php");?>	    
+    <?php include("template/$OJ_TEMPLATE/js.php");?>	    
   </body>
 </html>
