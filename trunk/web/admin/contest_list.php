@@ -39,7 +39,7 @@ if(isset($_GET['keyword'])){
 <form action=contest_list.php class=center><input name=keyword><input type=submit value="<?php echo $MSG_SEARCH?>" ></form>
 
 <?php
-echo "<center><table class='table table-striped' width=90% border=1>";
+echo "<center><table class='sui-table'>";
 echo "<tr><td>ContestID<td>Title<td>StartTime<td>EndTime<td>Private<td>Status<td>Edit<td>Copy<td>Export<td>Logs";
 echo "</tr>";
 foreach($result as $row){
