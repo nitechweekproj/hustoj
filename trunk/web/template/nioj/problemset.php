@@ -27,15 +27,15 @@
             <div class="control-group">
               <input name='id' type=text placeholder="Problem ID" class="input-default">
               <div class="controls">
-                <button type="submit" class="sui-btn btn-large btn-primary">Go</button>
+                <button type="submit" class="sui-btn btn-primary">Go</button>
               </div>
             </div>
         </form>
         <form class="sui-form  form-horizontal">
           <div class="control-group">
-            <input name=search type=text placeholder="Keywords Title or Source" class="input-default">
+            <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
             <div class="controls">
-              <button type="submit" class="sui-btn btn-large btn-primary"><?php echo $MSG_SEARCH?></button>
+              <button type="submit" class="sui-btn btn-primary"><?php echo $MSG_SEARCH?></button>
             </div>
           </div>
         </form>
@@ -45,7 +45,7 @@
         <thead>
         <tr>
           <th width='5'></th>
-          <th width='20'><?php echo $MSG_PROBLEM_ID?></th>
+          <th width='40'><?php echo $MSG_PROBLEM_ID?></th>
           <th><?php echo $MSG_TITLE?></th>
           <th class='hidden-xs' width='10%'><?php echo $MSG_SOURCE?></th>
           <th width=60 ><?php echo $MSG_AC?></th>
