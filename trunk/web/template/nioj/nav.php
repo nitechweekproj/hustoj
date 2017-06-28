@@ -9,9 +9,8 @@
 	}
 ?>
       <!-- Static navbar -->
-      <div class="sui-navbar navbar-fixed-top">
+      <div class="sui-navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
-          <div class="sui-container">
             <a class="sui-brand" href="<?php echo $OJ_HOME?>"><?php echo $OJ_NAME?></a>
             <ul class="sui-nav">
 	      <?php $ACTIVE="class='active'"?>
@@ -33,12 +32,13 @@
               </a></li>
         <?php }?>
 
-              <li class="sui-dropdown"><a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle"><span id="profile">Login</span><i class="caret"></i></a>
-                <script src="<?php echo $path_fix."template/$OJ_TEMPLATE/profile.php?".rand();?>" ></script>
+              <li class="sui-dropdown pull-right"><a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle"><span id="profile">Login</span><i class="caret"></i></a>
+                <ul role="menu" class="sui-dropdown-menu">
+                  <script src="<?php echo $path_fix."template/$OJ_TEMPLATE/profile.php?".rand();?>" ></script>
+                </ul>
               </li>
 
             </ul>
-          </div>
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
 

@@ -15,16 +15,17 @@ header("Pragma: no-cache");
 	$profile='';
 		if (isset($_SESSION['user_id'])){
 				$sid=$_SESSION['user_id'];
-				$profile.= "<i class=icon-user></i><li><a href=".$path_fix."modifypage.php>$MSG_USERINFO</a></li>&nbsp;<li><a href='".$path_fix."userinfo.php?user=$sid'><span id=red>$sid</span></a></li>";
-				$profile.= "&nbsp;<li><a href=".$path_fix."logout.php>$MSG_LOGOUT</a></li>&nbsp;";
-			}else{
-				$profile.= "<li><a href=".$path_fix."loginpage.php>$MSG_LOGIN</a></li>&nbsp;";
-				if($OJ_LOGIN_MOD=="hustoj"){
-					$profile.= "<li><a href=".$path_fix."registerpage.php>$MSG_REGISTER</a></li>&nbsp;";
+				if (isset($_SESSION['administrator']))
+				{
+					$profile.= "<li role="presentation"><a role="menuitem" tabindex="-1" href=".$path_fix."modifypage.php>$MSG_USERINFO</a></li>&nbsp;<li role="presentation"><a role="menuitem" tabindex="-1" href='".$path_fix."userinfo.php?user=$sid'>$sid</a></li>";
 				}
+				$profile.= "&nbsp;<li role="presentation"><a role="menuitem" tabindex="-1" href=".$path_fix."logout.php>$MSG_LOGOUT</a></li>&nbsp;";
+				$profile.= "<li role="presentation"><a role="menuitem" tabindex="-1" href=".$path_fix."registerpage.php>$MSG_REGISTER</a></li>&nbsp;";
+			}else{
+				$profile.= "<li role="presentation"><a role="menuitem" tabindex="-1" href=".$path_fix."loginpage.php>$MSG_LOGIN</a></li>&nbsp;";
 			}
-			if (isset($_SESSION['administrator'])||isset($_SESSION['contest_creator'])||isset($_SESSION['problem_editor'])){
-           $profile.= "<li><a href=".$path_fix."admin/>$MSG_ADMIN</a></li>&nbsp;";
+			if (isset($_SESSION['administrator'])){
+           $profile.= "<li role="presentation"><a role="menuitem" tabindex="-1" href=".$path_fix."admin/>$MSG_ADMIN</a></li>&nbsp;";
 			}
 	 //  $profile.="</ul></li>";
 		?>
