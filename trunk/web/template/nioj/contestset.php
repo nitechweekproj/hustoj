@@ -20,16 +20,20 @@
   </head>
 
   <body>
-
-    <div class="sui-container">
-    <?php include("template/$OJ_TEMPLATE/nav.php");?>	    
+    <?php include("template/$OJ_TEMPLATE/nav.php");?>   
+    <div class="sui-container">  
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-      <form method=post action=contest.php >
-      	<?php echo $MSG_SEARCH;?>
-      	<input name=keyword type=text >
-      	<input type=submit>
-      </form>ServerTime:<span id=nowdate></span>
+      <div class="sui-container">
+        <form method=post action=contest.php class="sui-form">
+          <div class="control-group">
+          	<label class="control-label"><?php echo $MSG_SEARCH;?></label>
+            <input name=keyword type=text placeholder="Enter title for search" class="input-xfat">
+          	<input type=submit>
+          <div class="control-group">
+        </form>
+        ServerTime:<span id=nowdate></span>
+      </div>
       <table class='sui-table table-zebra table-bordered' width=90%>
         <thead>
           <tr><td width=10%>ID<td width=50%>Name<td width=30%>Status<td width=10%>Private<td>Creator</tr>
