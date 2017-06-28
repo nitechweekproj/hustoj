@@ -37,7 +37,7 @@
         </form>
       </div>
 
-      <table id='problemset' width='90%'class='sui-table table-zebra'>
+      <table id='problemset' width='90%' class='sui-table table-zebra'>
         <thead>
         <tr>
           <th width='5'></th>
