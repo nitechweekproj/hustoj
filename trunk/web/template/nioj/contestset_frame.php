@@ -3,15 +3,6 @@
   <!-- Main component for a primary marketing message or call to action -->
   <div class="sui-container">
     <h3>Check out onsite programming test</h3>
-    <form method="post" role="form" action=contest.php class="sui-form  form-horizontal">
-      <div class="control-group">
-        <label class="control-label"><?php echo $MSG_SEARCH;?></label>
-        <input name=keyword type=text placeholder="Enter title for search" class="input-xfat">
-        <div class="controls">
-          <button type="submit" class="sui-btn btn-xlarge btn-primary">Go</button>
-        </div>
-      </div>
-    </form>
     ServerTime:<span id=nowdate></span>
   </div>
   <table class='sui-table table-zebra table-bordered' width=90%>
