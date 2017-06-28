@@ -48,7 +48,7 @@
         [<a href='contestrank.php?cid=<?php echo $view_cid?>'>Standing</a>]
         [<a href='conteststatistics.php?cid=<?php echo $view_cid?>'>Statistics</a>]
         </div>
-        <table id='problemset' class="sui-table table-zebra"  width='90%'>
+        <table id='problemset' class="sui-table table-zebra table-bordered"  width='90%'>
           <thead>
             <tr>
               <td width='5'>

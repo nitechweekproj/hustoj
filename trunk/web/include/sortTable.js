@@ -60,10 +60,6 @@
         
                 var oFragment = document.createDocumentFragment();
                 for (var i=0; i < aTRs.length; i++) {
-					if(i%2==0)
-						aTRs[i].className='evenrow';
-					else
-						aTRs[i].className='oddrow';
                     oFragment.appendChild(aTRs[i]);
                 }
        
