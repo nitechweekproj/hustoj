@@ -12,7 +12,7 @@ header("Pragma: no-cache");
 	}else{
 		require_once("../../lang/en.php");
 	}
-	require_once("./css.php");
+	<link href="http://g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css" rel="stylesheet">
 	$profile='';
 		if (isset($_SESSION['user_id'])){
 				$sid=$_SESSION['user_id'];
