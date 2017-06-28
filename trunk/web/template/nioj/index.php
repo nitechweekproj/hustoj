@@ -42,7 +42,7 @@
             </div>
           </form>       
         </div> <!-- /container -->
-        <?php } else{ if (!isset($_SESSION['administrator']){?>
+        <?php }else{ if(!isset($_SESSION['administrator'])){?>
           <div class="sui-container" style="margin-top:20px">  
             <p class="sui-lead">Check out the interview questions:</p>
             <?php include("contest.php"); ?>
