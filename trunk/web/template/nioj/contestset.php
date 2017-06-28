@@ -21,38 +21,32 @@
 
   <body>
 
-    <div class="container">
+    <div class="sui-container">
     <?php include("template/$OJ_TEMPLATE/nav.php");?>	    
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-<center><form method=post action=contest.php >
-	<?php echo $MSG_SEARCH;?>
-	<input name=keyword type=text >
-	<input type=submit>
-</form>ServerTime:<span id=nowdate></span>
-<table class='table table-striped' width=90%>
-<thead>
-<tr class=toprow align=center><td width=10%>ID<td width=50%>Name<td width=30%>Status<td width=10%>Private<td>Creator</tr>
-</thead>
-<tbody>
-<?php
-$cnt=0;
-foreach($view_contest as $row){
-if ($cnt)
-echo "<tr class='oddrow'>";
-else
-echo "<tr class='evenrow'>";
-foreach($row as $table_cell){
-echo "<td>";
-echo "\t".$table_cell;
-echo "</td>";
-}
-echo "</tr>";
-$cnt=1-$cnt;
-}
-?>
-</tbody>
-</table></center>
+      <form method=post action=contest.php >
+      	<?php echo $MSG_SEARCH;?>
+      	<input name=keyword type=text >
+      	<input type=submit>
+      </form>ServerTime:<span id=nowdate></span>
+      <table class='sui-table table-zebra table-bordered' width=90%>
+        <thead>
+          <tr><td width=10%>ID<td width=50%>Name<td width=30%>Status<td width=10%>Private<td>Creator</tr>
+        </thead>
+      <tbody>
+        <?php
+          foreach($view_contest as $row){
+            foreach($row as $table_cell){
+              echo "<td>";
+              echo "\t".$table_cell;
+              echo "</td>";
+            }
+            echo "</tr>";
+          }
+        ?>
+      </tbody>
+      </table>
      </div>
 
     </div> <!-- /container -->

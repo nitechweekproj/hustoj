@@ -43,20 +43,16 @@
         else
         echo "&nbsp;&nbsp;<span class=red>Private</font>";
         ?>
-        <br>
-        [<a href='status.php?cid=<?php echo $view_cid?>'>Status</a>]
-        [<a href='contestrank.php?cid=<?php echo $view_cid?>'>Standing</a>]
-        [<a href='conteststatistics.php?cid=<?php echo $view_cid?>'>Statistics</a>]
         </div>
         <table id='problemset' class="sui-table table-zebra table-bordered"  width='90%'>
           <thead>
             <tr>
               <td width='5'>
-              <td style="cursor:hand" onclick="sortTable('problemset', 1, 'int');" ><?php echo $MSG_PROBLEM_ID?>
+              <td><?php echo $MSG_PROBLEM_ID?>
               <td width='60%'><?php echo $MSG_TITLE?></td>
               <td width='10%'><?php echo $MSG_SOURCE?></td>
-              <td style="cursor:hand" onclick="sortTable('problemset', 4, 'int');" width='5%'><?php echo $MSG_AC?></td>
-              <td style="cursor:hand" onclick="sortTable('problemset', 5, 'int');" width='5%'><?php echo $MSG_SUBMIT?></td>
+              <td width='5%'><?php echo $MSG_AC?></td>
+              <td width='5%'><?php echo $MSG_SUBMIT?></td>
             </tr>
           </thead>
           <tbody>
@@ -80,7 +76,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <?php include("template/$OJ_TEMPLATE/js.php");?>	    
-<script src="include/sortTable.js"></script>
 <script>
 var diff=new Date("<?php echo date("Y/m/d H:i:s")?>").getTime()-new Date().getTime();
 //alert(diff);
