@@ -18,7 +18,7 @@ if (!(isset($_SESSION['administrator'])||isset($_SESSION['problem_editor']))){
 <?php
 include_once("kindeditor.php") ;
 ?>
-<h2>Add New problem</h2>
+<h2 class="sui-page-header">Add New Problem</h2>
 
 <form method=POST action=problem_add.php>
 <input type=hidden name=problem_id value="New Problem">

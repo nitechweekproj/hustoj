@@ -5,7 +5,7 @@ if (!(isset($_SESSION['administrator']))){
 }
 ?>
 
-<h2>Export Problem<h2/>
+<h2 class="sui-page-header">Export Problem<h2/>
 <form action='problem_export_xml.php' method=post>
 	from pid:<input type=text size=10 name="start" value=1000>
 	to pid:<input type=text size=10 name="end" value=1000><br />

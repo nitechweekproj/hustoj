@@ -5,8 +5,8 @@
         }
 
 
-echo "<title>Problem List</title>";
-echo "<center><h2>Contest List</h2></center>";
+echo "<title>Onsite Interview List</title>";
+echo "<h2 class="sui-page-header">Onsite Interview List</h2>";
 require_once("../include/set_get_key.php");
 $sql="SELECT max(`contest_id`) as upid, min(`contest_id`) as btid  FROM `contest`";
 $page_cnt=50;

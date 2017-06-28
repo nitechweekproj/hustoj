@@ -122,7 +122,7 @@ else if(isset($_POST['problem2contest'])){
 ?>
 	
 	<form method=POST >
-	<h2>Add a Contest</h2>
+	<h2 class="sui-page-header">Add Onsite Interview</h2>
 	<p align=left>Title:<input class=input-xxlarge  type=text name=title size=71 value="<?php echo isset($title)?$title:""?>"></p>
 	<p align=left>Start Time:<br>&nbsp;&nbsp;&nbsp;
 	Year:<input  class=input-mini type=text name=syear value=<?php echo date('Y')?> size=4 >

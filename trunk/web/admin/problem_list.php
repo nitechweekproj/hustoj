@@ -26,7 +26,7 @@ if (isset($_GET['page'])){
 $pstart=1000+$page_cnt*intval($page-1);
 $pend=$pstart+$page_cnt;
 echo "<title>Problem List</title>";
-echo "<center><h2>Problem List</h2></center>";
+echo "<h2 class="sui-page-header">Problem List</h2>";
 echo "<form action=problem_list.php>";
 echo "<select class='input-mini' onchange=\"location.href='problem_list.php?page='+this.value;\">";
 for ($i=1;$i<=$cnt;$i++){
