@@ -19,7 +19,8 @@
     <![endif]-->
   </head>
 
-  <body>  
+  <body>
+    <?php if(isset($_SESSION['administrator'])) include("template/$OJ_TEMPLATE/nav.php");?>   
     <div class="sui-container">  
       <!-- Main component for a primary marketing message or call to action -->
       <div class="sui-container">

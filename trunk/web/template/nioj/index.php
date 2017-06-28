@@ -45,7 +45,6 @@
         <?php }else{ if(!isset($_SESSION['administrator'])){?>
           <div class="sui-container" style="margin-top:20px">  
             <?php require("contest.php"); ?>
-            <?php echo $_SESSION['user_id']?>
           </div>
         <?php } else{?>
           <div class="sui-container" style="margin-top:20px">  
