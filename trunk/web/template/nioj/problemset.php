@@ -23,14 +23,6 @@
     <?php include("template/$OJ_TEMPLATE/nav.php");?>
     <div class="sui-container">	    
       <div class="sui-container">
-        <form role="form" action=problem.php class="sui-form  form-horizontal">
-            <div class="control-group">
-              <input name='id' type=text placeholder="Problem ID" class="input-default">
-              <div class="controls">
-                <button type="submit" class="sui-btn btn-primary">Go</button>
-              </div>
-            </div>
-        </form>
         <form class="sui-form  form-horizontal">
           <div class="control-group">
             <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
@@ -41,7 +33,7 @@
         </form>
       </div>
 
-      <table id='problemset' width='90%' class='sui-table table-zebra'>
+      <table id='problemset' width='90%' class='sui-table table-zebra table-bordered'>
         <thead>
         <tr>
           <th width='5'></th>
@@ -82,6 +74,14 @@
           <li class="next"><a href="problemset.php?page=<?php echo $view_total_page?>">&gt;&gt;</a></li>
         </ul>
       </div>
+      <form role="form" action=problem.php class="sui-form  form-horizontal">
+            <div class="control-group">
+              <input name='id' type=text placeholder="Problem ID" class="input-default">
+              <div class="controls">
+                <button type="submit" class="sui-btn btn-primary">Go</button>
+              </div>
+            </div>
+      </form>
     </div>
 
     <!-- Bootstrap core JavaScript
