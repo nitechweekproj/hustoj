@@ -25,11 +25,11 @@
           <?php if(isset($_GET['cid'])){
             $cid=intval($_GET['cid']);
           ?>
-                <li  class="active" ><a href="<?php echo $path_fix?>status.php?cid=<?php echo $cid?>">
-          <?php echo $MSG_INTERVIEWSTATUS?>
+                <li <?php if ($url == "contest.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>contest.php?cid=<?php echo $cid?>">
+                  <?php echo $url?>
                 </a></li>
-                <li class="active" ><a href="<?php echo $path_fix?>contest.php?cid=<?php echo $cid?>">
-          <?php echo $MSG_PROBLEMS?>
+                <li <?php if ($url == "status.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>status.php?cid=<?php echo $cid?>">
+                  <?php echo $MSG_INTERVIEWSTATUS?>
                 </a></li>
           <?php }?>
               </ul>
