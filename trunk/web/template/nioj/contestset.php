@@ -35,6 +35,7 @@
         </form>
       </div>
       <div class="sui-container">
+        <h3>Onsite Interview <?php echo $_SESSION['user_id'] ?></h3>
         ServerTime:<span id=nowdate></span>
       </div>
       <table class='sui-table table-zebra table-bordered' width=90%>

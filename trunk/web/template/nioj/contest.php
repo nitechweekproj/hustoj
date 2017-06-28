@@ -24,7 +24,7 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="sui-container">
         <div class="sui-container">
-          <h3>Onsite Interview for <?php echo $_SESSION['user_id']?></h3>
+          <h3>Onsite Interview <?php echo $view_cid?> - <?php echo $view_title ?></h3>
           <p><?php echo $view_description?></p>
           <br>Start Time: <font color=#993399><?php echo $view_start_time?></font>
           End Time: <font color=#993399><?php echo $view_end_time?></font><br>
