@@ -69,7 +69,7 @@ if (isset($_SESSION['administrator'])){
 <?php }
 if (isset($_SESSION['administrator'])){
 ?><li>
-	<a class='btn btn-primary' href="privilege_list.php" target="main"><b><?php echo $MSG_PRIVILEGE.$MSG_LIST?></b></a>
+	<a class='btn btn-primary' href="privilege_list.php" target="main"><b><?php echo $MSG_PRIVILEGE." ".$MSG_LIST?></b></a>
 <?php }
 if (isset($_SESSION['administrator'])){
 ?><li>
