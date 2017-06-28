@@ -23,17 +23,19 @@
     <?php include("template/$OJ_TEMPLATE/nav.php");?>
     <div class="sui-container">	    
       <div class="sui-container">
-        <form method="post" role="form" action=problemset.php class="sui-form  form-horizontal">
+        <form method="post" role="form" action=problem.php class="sui-form  form-horizontal">
             <div class="control-group">
               <input name='id' type=text placeholder="Problem ID" class="input-default">
               <div class="controls">
                 <button type="submit" class="sui-btn btn-large btn-primary">Go</button>
               </div>
-              <input name=search type=text placeholder="Keywords Title or Source" class="input-default">
-              <div class="controls">
-                <button type="submit" class="sui-btn btn-large btn-primary"><?php echo $MSG_SEARCH?></button>
-              </div>
             </div>
+        </form>
+        <form class="sui-form  form-horizontal">
+          <input name=search type=text placeholder="Keywords Title or Source" class="input-default">
+          <div class="controls">
+            <button type="submit" class="sui-btn btn-large btn-primary"><?php echo $MSG_SEARCH?></button>
+          </div>
         </form>
       </div>
 
