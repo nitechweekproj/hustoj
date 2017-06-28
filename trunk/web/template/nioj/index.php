@@ -21,44 +21,18 @@
 
   <body>
 
-    <div class="container">
+    <div class="sui-container">
     <?php include("template/$OJ_TEMPLATE/nav.php");?>	    
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <p>
-<center>
-<div id=submission style="width:80%;height:300px" ></div>
-</center>
-        </p>
-	<?php echo $view_news?>
-      </div>
-
     </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
+    <div class="jumbotron">
+      <div class="sui-container">
+        <h1> Welcome to National Instruments onsite programming test</h1>
+        <p class="sui-lead">Login to the system with the user name and password given by the interviewer</p>
+        <p class="sui-lead">then check out the interview question in "Interview" tab</p>
+      </div>
+    </div>
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <?php include("template/$OJ_TEMPLATE/js.php");?>	    
- <script language="javascript" type="text/javascript" src="include/jquery.flot.js"></script>
-<script type="text/javascript">
-$(function () {
-var d1 = <?php echo json_encode($chart_data_all)?>;
-var d2 = <?php echo json_encode($chart_data_ac)?>;
-$.plot($("#submission"), [
-{label:"<?php echo $MSG_SUBMIT?>",data:d1,lines: { show: true }},
-{label:"<?php echo $MSG_AC?>",data:d2,bars:{show:true}} ],{
-grid: {
-backgroundColor: { colors: ["#fff", "#eee"] }
-},
-xaxis: {
-mode: "time",
-max:(new Date()).getTime(),
-min:(new Date()).getTime()-100*24*3600*1000
-}
-});
-});
-//alert((new Date()).getTime());
-</script>
   </body>
 </html>
