@@ -20,7 +20,8 @@
   </head>
 
   <body>
-    <?php include("template/$OJ_TEMPLATE/nav.php");?>	
+    <?php include("template/$OJ_TEMPLATE/nav.php");?>
+    <div class="jumbotron" style="height:1000px">
     <div class="sui-container">  
       <form action="login.php" method="post" role="form" class="sui-form form-horizontal">
       	<div class="control-group">
