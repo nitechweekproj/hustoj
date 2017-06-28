@@ -26,7 +26,7 @@
       <p class="sui-lead">Login to the system with the user name and password given by the interviewer</p>
       <p class="sui-lead">then check out the interview question in "Interview" tab</p>
     </div>
-    <?php if(isset($_SESSION['user_id'])) {?>
+    <?php if(!isset($_SESSION['user_id'])) {?>
       <div class="sui-container" style="margin-top:20px">  
         <form action="login.php" method="post" role="form" class="sui-form form-horizontal">
           <div class="control-group">
