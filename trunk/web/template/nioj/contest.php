@@ -23,26 +23,26 @@
     <?php include("template/$OJ_TEMPLATE/nav.php");?>	    
       <!-- Main component for a primary marketing message or call to action -->
       <div class="sui-container">
-        <div>
-        <h3>Contest<?php echo $view_cid?> - <?php echo $view_title ?></h3>
-        <p><?php echo $view_description?></p>
-        <br>Start Time: <font color=#993399><?php echo $view_start_time?></font>
-        End Time: <font color=#993399><?php echo $view_end_time?></font><br>
-        Current Time: <font color=#993399><span id=nowdate > <?php echo date("Y-m-d H:i:s")?></span></font>
-        Status:<?php
-        if ($now>$end_time)
-        echo "<span class=red>Ended</span>";
-        else if ($now<$start_time)
-        echo "<span class=red>Not Started</span>";
-        else
-        echo "<span class=red>Running</span>";
-        ?>&nbsp;&nbsp;
-        <?php
-        if ($view_private=='0')
-        echo "<span class=blue>Public</font>";
-        else
-        echo "&nbsp;&nbsp;<span class=red>Private</font>";
-        ?>
+        <div class="sui-container">
+          <h3>Onsite Interview <?php echo $view_cid?> - <?php echo $view_title ?></h3>
+          <p><?php echo $view_description?></p>
+          <br>Start Time: <font color=#993399><?php echo $view_start_time?></font>
+          End Time: <font color=#993399><?php echo $view_end_time?></font><br>
+          Current Time: <font color=#993399><span id=nowdate > <?php echo date("Y-m-d H:i:s")?></span></font>
+          Status:<?php
+          if ($now>$end_time)
+          echo "<span class=red>Ended</span>";
+          else if ($now<$start_time)
+          echo "<span class=red>Not Started</span>";
+          else
+          echo "<span class=red>Running</span>";
+          ?>&nbsp;&nbsp;
+          <?php
+          if ($view_private=='0')
+          echo "<span class=blue>Public</font>";
+          else
+          echo "&nbsp;&nbsp;<span class=red>Private</font>";
+          ?>
         </div>
         <table id='problemset' class="sui-table table-zebra table-bordered"  width='90%'>
           <thead>

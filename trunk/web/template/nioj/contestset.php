@@ -29,10 +29,12 @@
           	<label class="control-label"><?php echo $MSG_SEARCH;?></label>
             <input name=keyword type=text placeholder="Enter title for search" class="input-xfat">
             <div class="controls">
-              <button type="submit" class="sui-btn btn-xlarge">Go</button>
+              <button type="submit" class="sui-btn btn-xlarge btn-primary">Go</button>
             </div>
           </div>
         </form>
+      </div>
+      <div class="sui-container">
         ServerTime:<span id=nowdate></span>
       </div>
       <table class='sui-table table-zebra table-bordered' width=90%>
