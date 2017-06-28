@@ -24,11 +24,6 @@
   </table>
 </div>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <?php include("template/$OJ_TEMPLATE/js.php");?>      
   <script>
 var diff=new Date("<?php echo date("Y/m/d H:i:s")?>").getTime()-new Date().getTime();
 //alert(diff);
