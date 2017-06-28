@@ -45,12 +45,13 @@
         <?php }else{ if(!isset($_SESSION['administrator'])){?>
           <div class="sui-container" style="margin-top:20px">  
             <p class="sui-lead">Check out the interview questions:</p>
+            <?php include("contest.php"); ?>
           </div>
         <?php } else{?>
           <div class="sui-container" style="margin-top:20px">  
             <p class="sui-lead">For administration functions, go to user->Admin</p>
           </div>
-        <?php }?>
+        <?php }}?>
       </div>
     </div>
     <!-- Placed at the end of the document so the pages load faster -->
