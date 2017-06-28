@@ -22,7 +22,7 @@ $pstart=$base+$page_cnt*intval($page-1);
 $pend=$pstart+$page_cnt;
 for ($i=1;$i<=$cnt;$i++){
         if ($i>1) echo '&nbsp;';
-        if ($i==$page) echo "<span class=red>$i</span>";
+        #if ($i==$page) echo "<span class=red>$i</span>";
         else echo "<a href='contest_list.php?page=".$i."'>".$i."</a>";
 }
 $sql="";
