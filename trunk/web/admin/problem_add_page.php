@@ -22,26 +22,23 @@ include_once("kindeditor.php") ;
 
 <form method=POST action=problem_add.php>
 <input type=hidden name=problem_id value="New Problem">
-<p align=left>Problem Id:&nbsp;&nbsp;New Problem</p>
-<p align=left>Title:<input class="input input-xxlarge" type=text name=title size=71></p>
-<p align=left>Time Limit:<input type=text name=time_limit size=20 value=1>S</p>
-<p align=left>Memory Limit:<input type=text name=memory_limit size=20 value=128>MByte</p>
-<p align=left>Description:<br> <textarea class="kindeditor" rows=13 name=description cols=80></textarea> </p>
-<div class="wrap">
-<div class="floatleft"><p align=left>Input:<br> <textarea class="input input-xxlarge" rows=8 name=input cols=80></textarea> </p></div>
-<div class="floatright"><p align=left>Output:<br> <textarea  class="input input-xxlarge" rows=8 name=output cols=80></textarea> </p></div>
-<div style="clear:both"/>
-</div>
-<p align=left>Sample Input:<br><textarea  class="input input-xxlarge"  rows=8 name=sample_input cols=80></textarea></p>
-<p align=left>Sample Output:<br><textarea  class="input input-xxlarge"  rows=8 name=sample_output cols=80></textarea></p>
-<p align=left>Test Input:<br><textarea  class="input input-xxlarge" rows=8 name=test_input cols=80></textarea></p>
-<p align=left>Test Output:<br><textarea  class="input input-xxlarge"  rows=8 name=test_output cols=80></textarea></p>
-<p align=left>Hint:<br>
+<p align=left class="sui-text-large">Problem Id:&nbsp;&nbsp;New Problem</p>
+<p align=left class="sui-text-large">Title:<input class="input input-xxlarge" type=text name=title size=71></p>
+<p align=left class="sui-text-large">Time Limit:<input type=text name=time_limit size=20 value=1>S</p>
+<p align=left class="sui-text-large">Memory Limit:<input type=text name=memory_limit size=20 value=128>MByte</p>
+<p align=left class="sui-text-large">Description:<br> <textarea class="kindeditor" rows=13 name=description cols=80></textarea> </p>
+<p align=left class="sui-text-large">Input:<br> <textarea class="input input-xxlarge" rows=8 name=input cols=80></textarea> </p>
+<p align=left class="sui-text-large">Output:<br> <textarea  class="input input-xxlarge" rows=8 name=output cols=80></textarea> </p>
+<p align=left class="sui-text-large">Sample Input:<br><textarea  class="input input-xxlarge"  rows=8 name=sample_input cols=80></textarea></p>
+<p align=left class="sui-text-large">Sample Output:<br><textarea  class="input input-xxlarge"  rows=8 name=sample_output cols=80></textarea></p>
+<p align=left class="sui-text-large">Test Input:<br><textarea  class="input input-xxlarge" rows=8 name=test_input cols=80></textarea></p>
+<p align=left class="sui-text-large">Test Output:<br><textarea  class="input input-xxlarge"  rows=8 name=test_output cols=80></textarea></p>
+<p align=left class="sui-text-large">Hint:<br>
 <textarea class="kindeditor" rows=13 name=hint cols=80></textarea>
 </p>
 <p>SpecialJudge: N<input type=radio name=spj value='0' checked>Y<input type=radio name=spj value='1'></p>
-<p align=left>Source:<br><textarea name=source rows=1 cols=70></textarea></p>
-<p align=left>contest:
+<p align=left class="sui-text-large">Source:<br><textarea name=source rows=1 cols=70></textarea></p>
+<p align=left class="sui-text-large">contest:
 	<select  name=contest_id>
 <?php
 
