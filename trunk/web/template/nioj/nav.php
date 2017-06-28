@@ -31,12 +31,13 @@
         <?php echo $MSG_PROBLEMS?>
               </a></li>
         <?php }?>
-
-              <li class="sui-dropdown pull-right"><a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle"><span id="profile">Login</span><i class="caret"></i></a>
-                <ul role="menu" class="sui-dropdown-menu">
-                  <script src="<?php echo $path_fix."template/$OJ_TEMPLATE/profile.php?".rand();?>" ></script>
-                </ul>
-              </li>
+              <ul class="pull-right">
+                <li class="sui-dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span id="profile">Login</span><i class="caret"></i></a>
+                  <ul role="menu" class="sui-dropdown-menu">
+                    <script src="<?php echo $path_fix."template/$OJ_TEMPLATE/profile.php?".rand();?>" ></script>
+                  </ul>
+                </li>
+              </ul>
 
             </ul>
         </div><!--/.nav-collapse -->
