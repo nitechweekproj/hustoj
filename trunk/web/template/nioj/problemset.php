@@ -32,9 +32,11 @@
             </div>
         </form>
         <form class="sui-form  form-horizontal">
-          <input name=search type=text placeholder="Keywords Title or Source" class="input-default">
-          <div class="controls">
-            <button type="submit" class="sui-btn btn-large btn-primary"><?php echo $MSG_SEARCH?></button>
+          <div class="control-group">
+            <input name=search type=text placeholder="Keywords Title or Source" class="input-default">
+            <div class="controls">
+              <button type="submit" class="sui-btn btn-large btn-primary"><?php echo $MSG_SEARCH?></button>
+            </div>
           </div>
         </form>
       </div>
