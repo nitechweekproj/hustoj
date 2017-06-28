@@ -14,9 +14,10 @@
 <body>
 <hr>
 <h4>
-<ol>
+<ol class="sui-nav nav-list">
+	<li class="nav-header">Admin</li>
 	<li>
-		<a class='btn btn-primary' href="watch.php" target="main"><b><?php echo $MSG_SEEOJ?></b></a>
+		<a href="watch.php" target="main"><b><?php echo $MSG_SEEOJ?></b></a>
 	<!--
 <?php if (isset($_SESSION['administrator'])){
 	?>
