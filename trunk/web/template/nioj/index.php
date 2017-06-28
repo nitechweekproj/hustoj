@@ -45,6 +45,7 @@
         <?php }else{ if(!isset($_SESSION['administrator'])){?>
           <div class="sui-container" style="margin-top:20px">  
             <?php require("contest.php"); ?>
+            <?php require("template/$OJ_TEMPLATE/contestset_frame.php"); ?>
           </div>
         <?php } else{?>
           <div class="sui-container" style="margin-top:20px">  
