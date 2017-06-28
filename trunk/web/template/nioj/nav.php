@@ -11,6 +11,7 @@
       <!-- Static navbar -->
       <div class="sui-navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
+          <div class="sui-container">
             <a class="sui-brand" href="<?php echo $OJ_HOME?>"><?php echo $OJ_NAME?></a>
             <ul class="sui-nav">
 	      <?php $ACTIVE="class='active'"?>
@@ -39,6 +40,7 @@
                   </ul>
                 </li>
             </ul>
+          </div>
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
 
