@@ -8,7 +8,7 @@
 $first=1000;
   //if($OJ_SAE) $first=1;
 $sql="select max(`problem_id`) as upid FROM `problem`";
-$page_cnt=100;
+$page_cnt=20;
 $result=pdo_query($sql);
 $row=$result[0];
 $cnt=$row['upid']-$first;
