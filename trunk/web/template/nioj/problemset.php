@@ -22,36 +22,16 @@
   <body>
     <?php include("template/$OJ_TEMPLATE/nav.php");?>
     <div class="sui-container">	    
-      <div class="sui-pagination">
-        <ul>
-          <li class="prev"><a href="problemset.php?page=1">&lt;&lt;</a></li>
-          <?php
-            if(!isset($page)) $page=1;
-            $page=intval($page);
-            $section=8;
-            $start=$page>$section?$page-$section:1;
-            $end=$page+$section>$view_total_page?$view_total_page:$page+$section;
-            for ($i=$start;$i<=$end;$i++){
-            echo "<li class='".($page==$i?"active ":"")."page-item'>
-                    <a href='problemset.php?page=".$i."'>".$i."</a></li>";
-            }
-          ?>
-          <li class="next"><a href="problemset.php?page=<?php echo $view_total_page?>">&gt;&gt;</a></li>
-        </ul>
-      </div>
-
       <div class="sui-container">
         <form method="post" role="form" action=problem.php class="sui-form  form-horizontal">
             <div class="control-group">
               <input name='id' type=text placeholder="Problem ID" class="input-default">
               <div class="controls">
-                <button type="submit" class="sui-btn btn-xlarge btn-primary">Go</button>
+                <button type="submit" class="sui-btn btn-large btn-primary">Go</button>
               </div>
-            </div>
-            <div class="control-group">
               <input name=search type=text placeholder="Keywords Title or Source" class="input-default">
               <div class="controls">
-                <button type="submit" class="sui-btn btn-xlarge btn-primary"><?php echo $MSG_SEARCH?></button>
+                <button type="submit" class="sui-btn btn-large btn-primary"><?php echo $MSG_SEARCH?></button>
               </div>
             </div>
         </form>
@@ -81,6 +61,23 @@
         ?>
         </tbody>
       </table>
+      <div class="sui-pagination">
+        <ul>
+          <li class="prev"><a href="problemset.php?page=1">&lt;&lt;</a></li>
+          <?php
+            if(!isset($page)) $page=1;
+            $page=intval($page);
+            $section=1;
+            $start=$page>$section?$page-$section:1;
+            $end=$page+$section>$view_total_page?$view_total_page:$page+$section;
+            for ($i=$start;$i<=$end;$i++){
+            echo "<li class='".($page==$i?"active ":"")."page-item'>
+                    <a href='problemset.php?page=".$i."'>".$i."</a></li>";
+            }
+          ?>
+          <li class="next"><a href="problemset.php?page=<?php echo $view_total_page?>">&gt;&gt;</a></li>
+        </ul>
+      </div>
     </div>
 
     <!-- Bootstrap core JavaScript
