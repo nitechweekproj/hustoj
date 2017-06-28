@@ -67,7 +67,7 @@
           <?php
             if(!isset($page)) $page=1;
             $page=intval($page);
-            $section=1;
+            $section=8;
             $start=$page>$section?$page-$section:1;
             $end=$page+$section>$view_total_page?$view_total_page:$page+$section;
             for ($i=$start;$i<=$end;$i++){
