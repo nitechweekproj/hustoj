@@ -51,9 +51,7 @@
               <label class="control-label"><?php echo $MSG_PASSWORD?></label>
               <div class="controls">
                 <input name="password" class="input-xfat" placeholder="<?php echo $MSG_PASSWORD?>" type="password">
-              </div>
-              <div class="controls">
-                <input name="rptpassword" class="input-xfat" placeholder="repeat pwd" type="password">
+                <input name="rptpassword" class="input-xfat" placeholder="Repeat Password" type="password">
               </div>
               <label class="control-label"></label>
               <button type="submit" class="sui-btn btn-xlarge btn-primary">Sign Up</button>
