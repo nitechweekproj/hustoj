@@ -278,7 +278,7 @@ for ($i=0;$i<$rows_cnt;$i++){
 						
                 }
 				//echo $row['result'];
-                if (!(isset($_SESSION['user_id'])&&strtolower($row['user_id'])==strtolower($_SESSION['user_id']) || isset($_SESSION['source_browser']))){
+                if (!(isset($_SESSION['user_id'])&&strtolower($row['user_id'])==strtolower($_SESSION['user_id']) || isset($_SESSION['administrator']))){
                         $view_status[$i][6]=$language_name[$row['language']];
                 }else{
 
