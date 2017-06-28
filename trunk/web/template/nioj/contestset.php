@@ -23,8 +23,8 @@
     <?php include("template/$OJ_TEMPLATE/nav.php");?>   
     <div class="sui-container">  
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="sui-container form-horizontal">
-        <form method="post" role="form" action=contest.php class="sui-form">
+      <div class="sui-container">
+        <form method="post" role="form" action=contest.php class="sui-form  form-horizontal">
           <div class="control-group">
           	<label class="control-label"><?php echo $MSG_SEARCH;?></label>
             <input name=keyword type=text placeholder="Enter title for search" class="input-xfat">
