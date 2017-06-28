@@ -100,16 +100,16 @@ $MSG_TEST_RUN="Test Running Done";
 	$MSG_Memory_Limit="Memory Limit";
 	
 	//admin menu
-	$MSG_SEEOJ="SeeOJ";
+	$MSG_SEEOJ="See OJ";
 	$MSG_ADD="Add";
 	$MSG_LIST="List";
 	$MSG_NEWS="News";
-	$MSG_TEAMGENERATOR="TeamGenerator";
-	$MSG_SETMESSAGE="SetMessage";
-	$MSG_SETPASSWORD="ChangePassWD";
+	$MSG_TEAMGENERATOR="Team Generator";
+	$MSG_SETMESSAGE="Set Message";
+	$MSG_SETPASSWORD="Change Password";
 	$MSG_REJUDGE="Rejudge";
 	$MSG_PRIVILEGE="Privilege";
-	$MSG_GIVESOURCE="GiveSource";
+	$MSG_GIVESOURCE="Give Source";
 	$MSG_IMPORT="Import";
 	$MSG_EXPORT="Export";
 	$MSG_UPDATE_DATABASE="UpdateDatabase";

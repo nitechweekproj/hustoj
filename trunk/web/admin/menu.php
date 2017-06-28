@@ -77,11 +77,11 @@ if (isset($_SESSION['administrator'])){
 <?php }
 if (isset($_SESSION['administrator'])){
 ?><li>
-	<a class='btn btn-primary' href="problem_export.php" target="main"><b><?php echo $MSG_EXPORT.$MSG_PROBLEM?></b></a>
+	<a class='btn btn-primary' href="problem_export.php" target="main"><b><?php echo $MSG_EXPORT." ".$MSG_PROBLEM?></b></a>
 <?php }
 if (isset($_SESSION['administrator'])){
 ?><li>
-	<a class='btn btn-primary' href="problem_import.php" target="main"><b><?php echo $MSG_IMPORT.$MSG_PROBLEM?></b></a>
+	<a class='btn btn-primary' href="problem_import.php" target="main"><b><?php echo $MSG_IMPORT." ".$MSG_PROBLEM?></b></a>
 <!--
 <?php }
 if (isset($_SESSION['administrator'])){
