@@ -5,7 +5,7 @@ if (!(isset($_SESSION['administrator']))){
 	exit(1);
 }
 echo "<title>Privilege List</title>"; 
-echo "<h2 class="sui-page-header">Privilege List</h2>";
+echo "<h2 class=\"sui-page-header\">Privilege List</h2>";
 $sql="select * FROM privilege where rightstr in ('administrator','source_browser','contest_creator','http_judge','problem_editor') ";
 $result=pdo_query($sql) ;
 echo "<center><table class='table table-striped' width=60% border=1>";

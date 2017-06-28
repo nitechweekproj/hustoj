@@ -13,7 +13,7 @@ if(isset($_POST['do'])){
 	
 }
 ?>
-<h2>Add Privilege or Contest to User</h2>
+<h2 class="sui-page-header">Add Privilege or Contest to User</h2>
 <form method=post>
 <?php require("../include/set_post_key.php");?>
 	<b>Add privilege for User:</b><br />
