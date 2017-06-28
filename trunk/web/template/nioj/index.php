@@ -42,15 +42,19 @@
             </div>
           </form>       
         </div> <!-- /container -->
-        <?php } else{?>
+        <?php } else{ if (!isset($_SESSION['administrator']){?>
           <div class="sui-container" style="margin-top:20px">  
             <p class="sui-lead">Check out the interview questions:</p>
             <?php include("contest.php"); ?>
+          </div>
+        <?php } else{?>
+          <div class="sui-container" style="margin-top:20px">  
+            <p class="sui-lead">For administration functions, go to user->Admin</p>
           </div>
         <?php }?>
       </div>
     </div>
     <!-- Placed at the end of the document so the pages load faster -->
-    <?php include("template/$OJ_TEMPLATE/js.php");?>	    
+    <?php if(!isset($_SESSION['administrator']) include("template/$OJ_TEMPLATE/js.php");?>	    
   </body>
 </html>

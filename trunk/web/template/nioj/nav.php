@@ -19,8 +19,8 @@
           <?php if(isset($_SESSION['administrator'])) {?>
             <li <?php if ($url=="problemset.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>problemset.php">Problem Set</a></li>
             <li <?php if ($url=="status.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>status.php">Overall status</a></li>
-          <?php }?>
             <li <?php if ($url=="contest.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>contest.php">Interviews</a></li>
+          <?php }?>
             <li <?php if ($url=="faqs.php") echo " $ACTIVE";?>><a href="<?php echo $path_fix?>faqs.php">Instructions</a></li>
 
       <?php if(isset($_GET['cid'])){
