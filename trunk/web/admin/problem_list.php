@@ -52,7 +52,7 @@ if($keyword) {
 <?php
 echo "<center><table class='sui-table'>";
 echo "<form method=post action=contest_add.php>";
-echo "<tr><td colspan=7><input type=submit name='problem2contest' value='CheckToNewContest'>";
+echo "<tr><td colspan=7><input type=submit name='problem2contest' value='Check To New Contest'>";
 echo "<tr><td>PID<td>Title<td>AC<td>Date";
 if(isset($_SESSION['administrator'])||isset($_SESSION['problem_editor'])){
         if(isset($_SESSION['administrator']))   echo "<td>Status<td>Delete";
@@ -83,7 +83,7 @@ foreach($result as $row){
         }
         echo "</tr>";
 }
-echo "<tr><td colspan=7><input type=submit name='problem2contest' value='CheckToNewContest'>";
+echo "<tr><td colspan=7><input type=submit name='problem2contest' value='Check To New Contest'>";
 echo "</tr></form>";
 echo "</table></center>";
 ?>
