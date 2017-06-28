@@ -21,7 +21,6 @@
 
   <body>
     <?php include("template/$OJ_TEMPLATE/nav.php");?>
-    <div class="jumbotron" style="height:1000px">
     <div class="sui-container">  
       <form action="login.php" method="post" role="form" class="sui-form form-horizontal">
       	<div class="control-group">
@@ -29,19 +28,12 @@
           <div class="controls">
             <input name="user_id" class="form-control" placeholder="<?php echo $MSG_USER_ID?>" type="text">
           </div>
-        </div>
-      	<div class="control-group">
           <label class="control-label"><?php echo $MSG_PASSWORD?></label>
           <div class="controls">
             <input name="password" class="form-control" placeholder="<?php echo $MSG_PASSWORD?>" type="password">
           </div>
-        </div>
-      	<div class="control-group">
           <label class="control-label"></label>
       	  <button type="submit" class="sui-btn btn-primary"><?php echo $MSG_LOGIN; ?></button>
-      	</div>
-      	<div class="control-group">
-      	  <a class="sui-btn" href="lostpassword.php"><?php echo $MSG_LOST_PASSWORD; ?></a>
       	</div>
       </form>				
     </div> <!-- /container -->
