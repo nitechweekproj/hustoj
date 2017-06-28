@@ -20,18 +20,30 @@
   </head>
 
   <body>
-
-    <div class="sui-container">
     <?php include("template/$OJ_TEMPLATE/nav.php");?>	    
-    </div> <!-- /container -->
-    <div class="brand-intro">
+    <div style="background-color:#4cb9fc">
       <div class="sui-container">
         <h1> Welcome to National Instruments onsite programming test</h1>
         <p class="sui-lead">Login to the system with the user name and password given by the interviewer</p>
         <p class="sui-lead">then check out the interview question in "Interview" tab</p>
       </div>
     </div>
-    ================================================== -->
+    <div class="sui-container">  
+      <form action="login.php" method="post" role="form" class="sui-form form-horizontal">
+        <div class="control-group">
+          <label class="control-label"><?php echo $MSG_USER_ID?></label>
+          <div class="controls">
+            <input name="user_id" class="input-xfat" placeholder="<?php echo $MSG_USER_ID?>" type="text">
+          </div>
+          <label class="control-label"><?php echo $MSG_PASSWORD?></label>
+          <div class="controls">
+            <input name="password" class="input-xfat" placeholder="<?php echo $MSG_PASSWORD?>" type="password">
+          </div>
+          <label class="control-label"></label>
+          <button type="submit" class="sui-btn btn-primary"><?php echo $MSG_LOGIN; ?></button>
+        </div>
+      </form>       
+    </div> <!-- /container -->
     <!-- Placed at the end of the document so the pages load faster -->
     <?php include("template/$OJ_TEMPLATE/js.php");?>	    
   </body>
