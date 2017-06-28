@@ -203,9 +203,9 @@ for ($i=0;$i<$rows_cnt;$i++){
         $view_status[$i][0]=$row['solution_id'];
        
         if ($row['contest_id']>0) {
-                $view_status[$i][1]= "<a href='contestrank.php?cid=".$row['contest_id']."&user_id=".$row['user_id']."#".$row['user_id']."'>".$row['user_id']."</a>";
+                $view_status[$i][1]= $row['user_id'];
         }else{
-                $view_status[$i][1]= "<a href='userinfo.php?user=".$row['user_id']."'>".$row['user_id']."</a>";
+                $view_status[$i][1]= $row['user_id'];
         }
 
        if ($row['contest_id']>0) {
@@ -278,7 +278,7 @@ for ($i=0;$i<$rows_cnt;$i++){
 						
                 }
 				//echo $row['result'];
-                if (!(isset($_SESSION['user_id'])&&strtolower($row['user_id'])==strtolower($_SESSION['user_id']) || isset($_SESSION['source_browser']))){
+                if (!(isset($_SESSION['user_id'])&&strtolower($row['user_id'])==strtolower($_SESSION['user_id']) || isset($_SESSION['administrator']))){
                         $view_status[$i][6]=$language_name[$row['language']];
                 }else{
 
@@ -312,10 +312,7 @@ for ($i=0;$i<$rows_cnt;$i++){
 
 <?php
 /////////////////////////Template
-if (isset($_GET['cid']))
-	require("template/".$OJ_TEMPLATE."/conteststatus.php");
-else
-	require("template/".$OJ_TEMPLATE."/status.php");
+require("template/".$OJ_TEMPLATE."/status.php");
 /////////////////////////Common foot
 if(file_exists('./include/cache_end.php'))
 	require_once('./include/cache_end.php');

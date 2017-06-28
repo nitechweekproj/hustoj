@@ -24,7 +24,7 @@
     <div class="sui-container">  
       <!-- Main component for a primary marketing message or call to action -->
       <div class="sui-container">
-        <h3>Onsite Interview for <?php echo $_SESSION['user_id'] ?></h3>
+        <h3>Check out onsite programming test</h3>
         <form method="post" role="form" action=contest.php class="sui-form  form-horizontal">
           <div class="control-group">
             <label class="control-label"><?php echo $MSG_SEARCH;?></label>
