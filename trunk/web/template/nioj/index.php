@@ -23,10 +23,10 @@
     <?php include("template/$OJ_TEMPLATE/nav.php");?>
     <div class="jumbotron" style="background-color:#eee">
       <div class="sui-container">
-        <h1> Welcome to National Instruments onsite programming test</h1>
-        <p class="sui-lead">Login to the system with the user name and password given by the interviewer</p>
+        <h1> Welcome to National Instruments Onsite Programming Test</h1>
         <?php if(!isset($_SESSION['user_id'])) {?>
         <div class="sui-container" style="margin-top:20px">  
+          <p class="sui-lead">Login to the system with the user name and password given by the interviewer</p>
           <form action="login.php" method="post" role="form" class="sui-form form-horizontal">
             <div class="control-group">
               <label class="control-label"><?php echo $MSG_USER_ID?></label>
@@ -42,6 +42,11 @@
             </div>
           </form>       
         </div> <!-- /container -->
+        <?php } else{?>
+          <div class="sui-container" style="margin-top:20px">  
+            <p class="sui-lead">Check out the interview questions:</p>
+            <?php include("../../contest.php"); ?>
+          </div>
         <?php }?>
       </div>
     </div>

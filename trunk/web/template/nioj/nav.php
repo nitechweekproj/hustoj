@@ -11,7 +11,7 @@
       <!-- Static navbar -->
       <div class="sui-navbar navbar-inverse">
         <div class="navbar-inner">
-          <a class="sui-brand"  style="font-size:32px" href="<?php echo $OJ_HOME?>">
+          <a class="sui-brand"  style="font-size:28px" href="<?php echo $OJ_HOME?>">
             <?php echo $OJ_NAME?>
           </a>
           <ul class="sui-nav" style="font-size:14px">
@@ -38,7 +38,7 @@
             </a></li>
       <?php }?>
           </ul>
-          <ul class="sui-nav pull-right">
+          <ul class="sui-nav pull-right" style="font-size:14px">
               <li class="sui-dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span id="profile">Login</span><i class="caret"></i></a>
                 <ul role="menu" class="sui-dropdown-menu">
                   <script src="<?php echo $path_fix."template/$OJ_TEMPLATE/profile.php?".rand();?>" ></script>
