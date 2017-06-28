@@ -31,14 +31,13 @@
         <?php echo $MSG_PROBLEMS?>
               </a></li>
         <?php }?>
-              <ul class="pull-right">
+            </ul>
+            <ul class="sui-nav pull-right">
                 <li class="sui-dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span id="profile">Login</span><i class="caret"></i></a>
                   <ul role="menu" class="sui-dropdown-menu">
                     <script src="<?php echo $path_fix."template/$OJ_TEMPLATE/profile.php?".rand();?>" ></script>
                   </ul>
                 </li>
-              </ul>
-
             </ul>
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
