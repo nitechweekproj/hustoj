@@ -14,7 +14,8 @@
 <body>
    <h1>Welcome, Administrator~</h1>
    <ul>
-      <li><span class="sui-test-info">You could use the navigation bar displayed left to make use of the system.</span></li>
+      <li><span class="sui-text-info">You could use the navigation bar displayed left to make use of the system.</span></li>
+      <i class="sui-icon icon-tb-emoji"></i>
    </ul>
 </body>
 </html>
