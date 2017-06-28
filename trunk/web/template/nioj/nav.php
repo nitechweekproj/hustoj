@@ -10,8 +10,8 @@
 ?>
       <!-- Static navbar -->
       <div class="sui-navbar navbar-inverse">
-        <div class="navbar-inner" style="font-size:32px">
-          <a class="sui-brand" href="<?php echo $OJ_HOME?>">
+        <div class="navbar-inner">
+          <a class="sui-brand"  style="font-size:32px" href="<?php echo $OJ_HOME?>">
             <?php echo $OJ_NAME?>
           </a>
           <ul class="sui-nav" style="font-size:14px">
