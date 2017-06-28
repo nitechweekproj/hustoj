@@ -23,7 +23,7 @@
     <?php include("template/$OJ_TEMPLATE/nav.php");?>
     <div class="sui-container">	    
       <div class="sui-container">
-        <form method="post" role="form" action=problem.php class="sui-form  form-horizontal">
+        <form method="post" role="form" action=problemset.php class="sui-form  form-horizontal">
             <div class="control-group">
               <input name='id' type=text placeholder="Problem ID" class="input-default">
               <div class="controls">
