@@ -24,10 +24,10 @@
 
           <?php if(isset($_GET['cid'])){
             $cid=intval($_GET['cid']);
-            $contest_tab="contest.php?cid="
-            $status_tab="status.php?cid="
-            $contest_tab .= $cid
-            $status_tab .= $cid
+            $contest_tab="contest.php?cid=";
+            $status_tab="status.php?cid=";
+            $contest_tab .= $cid;
+            $status_tab .= $cid;
           ?>
                 <li <?php if ($url == $contest_tab) echo " $ACTIVE";?>><a href="<?php echo $path_fix?>contest.php?cid=<?php echo $cid?>">
                   <?php echo $MSG_CONTEST?>
