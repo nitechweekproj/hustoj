@@ -131,15 +131,17 @@ else if(isset($_POST['problem2contest'])){
 	Hour:<input class=input-mini    type=text name=shour size=2 value=<?php echo date('H')?>>&nbsp;
 	Minute:<input class=input-mini    type=text name=sminute value=00 size=2 ></p>
 	<p align=left>End Time:<br>&nbsp;&nbsp;&nbsp;
-	Year:<input class=input-mini    type=text name=eyear value=<?php echo date('Y')?> size=4 >
-	Month:<input class=input-mini    type=text name=emonth value=<?php echo date('m')?> size=2 >
-	
+	Year:<input class=input-mini type=text name=eyear value=<?php echo date('Y')?> size=4 >
+	Month:<input class=input-mini type=text name=emonth value=<?php echo date('m')?> size=2 >
 	Day:<input class=input-mini  type=text name=eday size=2 value=<?php echo date('d')+(date('H')+4>23?1:0)?>>&nbsp;
 	Hour:<input class=input-mini  type=text name=ehour size=2 value=<?php echo (date('H')+4)%24?>>&nbsp;
-	Minute:<input class=input-mini  type=text name=eminute value=00 size=2 ></p>
-	Public:<select name=private><option value=0>Public</option><option value=1>Private</option></select>
-	Password:<input type=text name=password value="">
-	Language:<select name="lang[]" multiple="multiple"    style="height:220px">
+	Minute:<input class=input-mini type=text name=eminute value=00 size=2 ></p>
+	<p>Public:<select name=private>
+     <option value=0>Public</option>
+	  <option value=1>Private</option></select>
+	</p>
+	<p>Password:<input type=text name=password value=""></p>
+	<p>Language:<select name="lang[]" multiple="multiple" style="height:20px"></p>
 	<?php
 $lang_count=count($language_ext);
 
