@@ -12,6 +12,7 @@ header("Pragma: no-cache");
 	}else{
 		require_once("../../lang/en.php");
 	}
+	require_once("./css.php");
 	$profile='';
 		if (isset($_SESSION['user_id'])){
 				$sid=$_SESSION['user_id'];
