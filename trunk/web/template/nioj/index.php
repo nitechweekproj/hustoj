@@ -37,6 +37,8 @@
               <div class="controls">
                 <input name="password" class="input-xfat" placeholder="<?php echo $MSG_PASSWORD?>" type="password">
               </div>
+            </div>
+            <div class="control-group">
               <label class="control-label"></label>
               <button type="submit" class="sui-btn btn-xlarge btn-primary"><?php echo $MSG_LOGIN; ?></button>
             </div>
@@ -53,6 +55,8 @@
                 <input name="password" class="input-xfat" placeholder="<?php echo $MSG_PASSWORD?>" type="password">
                 <input name="rptpassword" class="input-xfat" placeholder="Repeat Password" type="password">
               </div>
+            </div>
+            <div class="control-group">
               <label class="control-label"></label>
               <button type="submit" class="sui-btn btn-xlarge btn-primary">Sign Up</button>
             </div>
