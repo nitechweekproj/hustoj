@@ -43,33 +43,27 @@
       }
       echo "</center>";?>
 
-      <style>
-        .tab-wraped > li ul {
-          width: 140px;
-        }
-        .tab-wraped > li ul label {
-          width: 50px!important;
-        }
-      </style>
-      <ul class="sui-nav nav-tabs tab-wraped">
-        <li class="active"><a href="#desc" data-toggle="tab">
-          <h3>Description</h3>
-        </a></li>
-        <li><a href="#args" data-toggle="tab">
-          <h3>Arguments</h3>
-        </a></li>
-        <li><a href="#example" data-toggle="tab">
-          <h3>Example</h3>
-        </a></li>
-        <li><a href="#hints" data-toggle="tab">
-          <h3>Hints</h3>
-        </a></li>
-      </ul>
+      <div class="sui-container" style="margin-top:20px">
+        <ul class="sui-nav nav-tabs tab-wraped">
+          <li class="active"><a href="#desc" data-toggle="tab">
+            <p>Description</p>
+          </a></li>
+          <li><a href="#args" data-toggle="tab">
+            <p>Arguments</p>
+          </a></li>
+          <li><a href="#example" data-toggle="tab">
+            <p>Example</p>
+          </a></li>
+          <li><a href="#hints" data-toggle="tab">
+            <p>Hints</p>
+          </a></li>
+        </ul>
+      </div>
 
       <div class="tab-content tab-wraped">
         <div id="desc" class="tab-pane active">
           <?php
-            echo "<h2>$MSG_Description</h2><div class=sui-text-xlarge>".$row['description']."</div>";?>
+            echo "<div class=sui-text-xlarge>".$row['description']."</div>";?>
         </div>
         <div id="args" class="tab-pane">
           <?php
