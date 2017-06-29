@@ -22,28 +22,28 @@ if(isset($_POST['do'])){
   else echo "No such user! or He/Her is an administrator!";
 }
 ?>
-<center>
-   <h2 class="sui-page-header">Change Password</h2>
-   <form class="sui-form form-horizontal" action='changepass.php' method=post>
-      <div class="control-group">
-         <div class="controls">
-            <input type=text name="user_id" class="input-xlarge input-fat" placeholder="User ID">
-         </div>
-      </div>
 
-      <div class="control-group">
-         <div class="controls">
-            <input type=text size=10 name="passwd" class="input-xlarge input-fat" placeholder="Password">
-         </div>
+<h2 class="sui-page-header">Change Password</h2>
+<form class="sui-form form-horizontal" action='changepass.php' method=post>
+   <div class="control-group">
+      <div class="controls">
+         <input type=text name="user_id" class="input-xlarge input-xfat" placeholder="User ID">
       </div>
+   </div>
 
-      <?php require_once("../include/set_post_key.php");?>
-      <input type='hidden' name='do' value='do'>
-
-      <div class="control-group">
-         <div class="controls">
-            <input type=submit value='Change' class="sui-btn btn-large btn-primary"> 
-         </div>
+   <div class="control-group">
+      <div class="controls">
+         <input type=text size=10 name="passwd" class="input-xlarge input-xfat" placeholder="Password">
       </div>
-   </form>
-</center>
+   </div>
+
+   <?php require_once("../include/set_post_key.php");?>
+   <input type='hidden' name='do' value='do'>
+
+   <div class="control-group">
+      <div class="controls">
+         <input type=submit value='Change' class="sui-btn btn-large btn-primary"> 
+      </div>
+   </div>
+</form>
+

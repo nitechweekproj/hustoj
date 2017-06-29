@@ -13,6 +13,7 @@
 
 <body>
    <h1 class="sui-page-header"><i class="sui-icon icon-touch-setting2" style="margin-right:1em;"></i>System Administration</h1>
+   <h2>Click the left-side navigation button to go to the setting page.</h2>
 </body>
 </html>
 
