@@ -24,9 +24,9 @@
     <div class="sui-container">   
       <div class="grid-demo">
         <div class="sui-row">
-          <div class="span2">
+          <div class="span4">
           </div>
-          <div class="span2">
+          <div class="span4">
             <form class="sui-form  form-horizontal" align="center">
               <div class="control-group">
                 <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
@@ -36,7 +36,7 @@
               </div>
             </form>
           </div>
-          <div class="span2">
+          <div class="span4">
           </div>
         </div>
       </div>
