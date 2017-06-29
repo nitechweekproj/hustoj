@@ -41,6 +41,23 @@
 
       <?php
       }
+      <?php
+        if ($pr_flag){
+          echo "[<a href='submitpage.php?id=$id'>Submit in New Window</a>]";
+        }else{
+          echo "[<a href='submitpage.php?cid=$cid&pid=$pid&langmask=$langmask'>Submit in New Window</a>]";
+        }
+
+        if(isset($_SESSION['administrator'])){
+        require_once("include/set_get_key.php");
+        ?>
+        [<a href="admin/problem_edit.php?id=<?php echo $id?>&getkey=<?php echo $_SESSION['getkey']?>" >Edit</a>]
+        [<a href='javascript:phpfm(<?php echo $row['problem_id'];?>)'>TestData</a>]
+        <?php
+        }
+        echo "</center>";
+        require("submitpage_frame.php");
+      ?>
       echo "</center>";?>
 
       <div class="sui-container" style="margin-top:20px;width:80%">
@@ -85,29 +102,10 @@
           </div>
           <div id="hints" class="tab-pane">
             <?php
-              echo "<h2>$MSG_HINT</h2>
-              <div class=sui-text-large><p>".nl2br($row['hint'])."</p></div>";?>
+              echo "<div class=sui-text-large><p>".nl2br($row['hint'])."</p></div>";?>
           </div>
         </div>
       </div>
-
-      <?php
-      if ($pr_flag){
-        echo "[<a href='submitpage.php?id=$id'>Submit in New Window</a>]";
-      }else{
-        echo "[<a href='submitpage.php?cid=$cid&pid=$pid&langmask=$langmask'>Submit in New Window</a>]";
-      }
-
-      if(isset($_SESSION['administrator'])){
-      require_once("include/set_get_key.php");
-      ?>
-      [<a href="admin/problem_edit.php?id=<?php echo $id?>&getkey=<?php echo $_SESSION['getkey']?>" >Edit</a>]
-      [<a href='javascript:phpfm(<?php echo $row['problem_id'];?>)'>TestData</a>]
-      <?php
-      }
-      echo "</center>";
-      require("submitpage_frame.php");
-    ?>
       </div>
 
     </div> <!-- /container -->
