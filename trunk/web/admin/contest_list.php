@@ -23,7 +23,7 @@ $pend=$pstart+$page_cnt;
 for ($i=1;$i<=$cnt;$i++){
         if ($i>1) echo '&nbsp;';
         #if ($i==$page) echo "<span class=red>$i</span>";
-        else echo "<a href='contest_list.php?page=".$i."'>".$i."</a>";
+        else echo "<a href='contest_list.php?page=".$i."'>Page ".$i."</a>";
 }
 $sql="";
 if(isset($_GET['keyword'])){
@@ -39,7 +39,7 @@ if(isset($_GET['keyword'])){
 <form action=contest_list.php class=center><input name=keyword><input type=submit value="<?php echo $MSG_SEARCH?>" ></form>
 
 <?php
-echo "<center><table class='sui-table'>";
+echo "<center><table class='sui-table table-bordered table-zebra'>";
 echo "<tr><td>ContestID<td>Title<td>StartTime<td>EndTime<td>Private<td>Status<td>Edit<td>Copy<td>Export<td>Logs";
 echo "</tr>";
 foreach($result as $row){
