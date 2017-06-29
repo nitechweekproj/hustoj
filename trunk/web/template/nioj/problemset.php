@@ -22,24 +22,25 @@
   <body>
     <?php include("template/$OJ_TEMPLATE/nav.php");?>
     <div class="sui-container">   
-      <div class="grid-demo">
-        <div class="sui-row">
-          <div class="span4">
+      <center>
+      <form class="sui-form  form-horizontal" align="center">
+        <div class="control-group">
+          <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
+          <div class="controls">
+            <button type="submit" class="sui-btn btn-primary"><?php echo $MSG_SEARCH?></button>
           </div>
-          <div class="span4">
-            <form class="sui-form  form-horizontal" align="center">
-              <div class="control-group">
-                <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
-                <div class="controls">
-                  <button type="submit" class="sui-btn btn-primary"><?php echo $MSG_SEARCH?></button>
-                </div>
+          <form role="form" action=problem.php class="sui-form  form-horizontal">
+            <div class="control-group">
+              <input name='id' type=text placeholder="Problem ID" class="input-default">
+              <div class="controls">
+                <button type="submit" class="sui-btn btn-primary">Go</button>
               </div>
-            </form>
-          </div>
-          <div class="span4">
-          </div>
+            </div>
+          </form>
         </div>
-      </div>
+      </form>
+
+      </center>
 
       <table id='problemset' width='90%' class='sui-table table-zebra table-bordered'>
         <thead>
@@ -65,41 +66,22 @@
         ?>
         </tbody>
       </table>
-      
-      <div class="grid-demo">
-        <div class="sui-row">
-          <div class="span4">
-            <div class="sui-pagination">
-              <ul>
-                <li class="prev"><a href="problemset.php?page=1">&lt;&lt;</a></li>
-                <?php
-                  if(!isset($page)) $page=1;
-                  $page=intval($page);
-                  $section=8;
-                  $start=$page>$section?$page-$section:1;
-                  $end=$page+$section>$view_total_page?$view_total_page:$page+$section;
-                  for ($i=$start;$i<=$end;$i++){
-                  echo "<li class='".($page==$i?"active ":"")."page-item'>
-                          <a href='problemset.php?page=".$i."'>".$i."</a></li>";
-                  }
-                ?>
-                <li class="next"><a href="problemset.php?page=<?php echo $view_total_page?>">&gt;&gt;</a></li>
-              </ul>
-      </div>
-          </div>
-          <div class="span4">
-            <form role="form" action=problem.php class="sui-form  form-horizontal">
-              <div class="control-group">
-                <input name='id' type=text placeholder="Problem ID" class="input-default">
-                <div class="controls">
-                  <button type="submit" class="sui-btn btn-primary">Go</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="span4">
-          </div>
-        </div>
+      <div class="sui-pagination">
+        <ul>
+          <li class="prev"><a href="problemset.php?page=1">&lt;&lt;</a></li>
+          <?php
+            if(!isset($page)) $page=1;
+            $page=intval($page);
+            $section=8;
+            $start=$page>$section?$page-$section:1;
+            $end=$page+$section>$view_total_page?$view_total_page:$page+$section;
+            for ($i=$start;$i<=$end;$i++){
+            echo "<li class='".($page==$i?"active ":"")."page-item'>
+                    <a href='problemset.php?page=".$i."'>".$i."</a></li>";
+            }
+          ?>
+          <li class="next"><a href="problemset.php?page=<?php echo $view_total_page?>">&gt;&gt;</a></li>
+        </ul>
       </div>
     </div>
 
