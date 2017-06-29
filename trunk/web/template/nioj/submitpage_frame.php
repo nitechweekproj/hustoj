@@ -29,7 +29,6 @@
           onsubmit="return checksource(document.getElementById('source').value);"
           <?php }?>>
           <?php if (isset($id)){?>
-          <span class='sui-text-large sui-text-info'>Problem<b><?php echo $id?></b></span>
           <input id=problem_id type='hidden' value='<?php echo $id?>' name="id" ><br>
           <?php }else{
           //$PID="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -61,7 +60,7 @@
        </span>
        <textarea style="width:80%" cols=180 rows=20 id="source" name="source"><?php echo htmlentities($view_src,ENT_QUOTES,"UTF-8")?></textarea><br>
        <br>
-       <input id="Submit" class="btn btn-info" type=button value="<?php echo $MSG_SUBMIT?>" onclick="do_submit();" >
+       <input id="Submit" class="sui-btn btn-xlarge btn-primary" type=button value="<?php echo $MSG_SUBMIT?>" onclick="do_submit();" >
        <?php if (isset($OJ_TEST_RUN)&&$OJ_TEST_RUN){?>
           <input id="TestRun" class="sui-btn btn-xlarge btn-primary" type=button value="<?php echo $MSG_TR?>" onclick=do_test_run();>
        <?php }?>

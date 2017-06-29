@@ -62,9 +62,9 @@
         echo "<h2>$MSG_HINT</h2>
         <div class=sui-text-large><p>".nl2br($row['hint'])."</p></div>";
       if ($pr_flag){
-        echo "[<a href='submitpage.php?id=$id'>$MSG_SUBMIT</a>]";
+        echo "[<a href='submitpage.php?id=$id'>Submit in New Window</a>]";
       }else{
-        echo "[<a href='submitpage.php?cid=$cid&pid=$pid&langmask=$langmask'>$MSG_SUBMIT</a>]";
+        echo "[<a href='submitpage.php?cid=$cid&pid=$pid&langmask=$langmask'>Submit in New Window</a>]";
       }
 
       if(isset($_SESSION['administrator'])){
