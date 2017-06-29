@@ -51,27 +51,23 @@
 
       echo "</center>";
       echo "<h2>$MSG_Description</h2><div class=sui-text-xlarge>".$row['description']."</div>";
-      echo "<h2>$MSG_Input</h2><div class=sui-text-xlarge>".$row['input']."</div>";
-      echo "<h2>$MSG_Output</h2><div class=sui-text-xlarge>".$row['output']."</div>";
+      echo "<h2>$MSG_Input</h2><div class=sui-text-large>".$row['input']."</div>";
+      echo "<h2>$MSG_Output</h2><div class=sui-text-large>".$row['output']."</div>";
       $sinput=str_replace("<","&lt;",$row['sample_input']);
       $sinput=str_replace(">","&gt;",$sinput);
       $soutput=str_replace("<","&lt;",$row['sample_output']);
       $soutput=str_replace(">","&gt;",$soutput);
       if(strlen($sinput)) {
         echo "<h2>$MSG_Sample_Input</h2>
-        <pre class=sui-text-xlarge><span class=sampledata>".($sinput)."</span></pre>";
+        <pre class=sui-text-large><span class=sampledata>".($sinput)."</span></pre>";
       }
       if(strlen($soutput)){
         echo "<h2>$MSG_Sample_Output</h2>
-        <pre class=sui-text-xlarge><span class=sampledata>".($soutput)."</span></pre>";
+        <pre class=sui-text-large><span class=sampledata>".($soutput)."</span></pre>";
       }
       if ($pr_flag||true)
         echo "<h2>$MSG_HINT</h2>
-        <div class=sui-text-xlarge><p>".nl2br($row['hint'])."</p></div>";
-      if ($pr_flag)
-        echo "<h2>$MSG_Source</h2>
-        <div class=sui-text-xlarge><p><a href='problemset.php?search=".$row['source']."'>".nl2br($row['source'])."</a></p></div>";
-        echo "<center>";
+        <div class=sui-text-large><p>".nl2br($row['hint'])."</p></div>";
       if ($pr_flag){
         echo "[<a href='submitpage.php?id=$id'>$MSG_SUBMIT</a>]";
       }else{
