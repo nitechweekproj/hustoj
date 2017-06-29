@@ -40,27 +40,57 @@
       ?>
 
       <?php
-      }?>
+      }
+      echo "</center>";?>
+
+      <ul class="sui-nav nav-tabs tab-wraped">
+        <li class="active"><a href="#desc" data-toggle="tab">
+          <h3>Description</h3>
+        </li>
+        <li class="active"><a href="#args" data-toggle="tab">
+          <h3>Arguments</h3>
+        </li>
+        <li class="active"><a href="#example" data-toggle="tab">
+          <h3>Example</h3>
+        </li>
+        <li class="active"><a href="#hints" data-toggle="tab">
+          <h3>Hints</h3>
+        </li>
+      </ul>
+
+      <div class="tab-content tab-wraped">
+        <div id="desc" class="tab-pane active">
+          <?php
+            echo "<h2>$MSG_Description</h2><div class=sui-text-xlarge>".$row['description']."</div>";?>
+        </div>
+        <div id="args" class="tab-pane">
+          <?php
+            echo "<h2>$MSG_Input</h2><div class=sui-text-large>".$row['input']."</div>";
+            echo "<h2>$MSG_Output</h2><div class=sui-text-large>".$row['output']."</div>";?>
+        </div>
+        <div id="example" class="tab-pane">
+          <?php
+            $sinput=str_replace("<","&lt;",$row['sample_input']);
+            $sinput=str_replace(">","&gt;",$sinput);
+            $soutput=str_replace("<","&lt;",$row['sample_output']);
+            $soutput=str_replace(">","&gt;",$soutput);
+            if(strlen($sinput)) {
+              echo "<h2>$MSG_Sample_Input</h2>
+              <pre class=sui-text-large><span class=sampledata>".($sinput)."</span></pre>";
+            }
+            if(strlen($soutput)){
+              echo "<h2>$MSG_Sample_Output</h2>
+              <pre class=sui-text-large><span class=sampledata>".($soutput)."</span></pre>";
+            }?>
+        </div>
+        <div id="hints" class="tab-pane">
+          <?php
+            echo "<h2>$MSG_HINT</h2>
+            <div class=sui-text-large><p>".nl2br($row['hint'])."</p></div>";?>
+        </div>
+      </div>
+
       <?php
-      echo "</center>";
-      echo "<h2>$MSG_Description</h2><div class=sui-text-xlarge>".$row['description']."</div>";
-      echo "<h2>$MSG_Input</h2><div class=sui-text-large>".$row['input']."</div>";
-      echo "<h2>$MSG_Output</h2><div class=sui-text-large>".$row['output']."</div>";
-      $sinput=str_replace("<","&lt;",$row['sample_input']);
-      $sinput=str_replace(">","&gt;",$sinput);
-      $soutput=str_replace("<","&lt;",$row['sample_output']);
-      $soutput=str_replace(">","&gt;",$soutput);
-      if(strlen($sinput)) {
-        echo "<h2>$MSG_Sample_Input</h2>
-        <pre class=sui-text-large><span class=sampledata>".($sinput)."</span></pre>";
-      }
-      if(strlen($soutput)){
-        echo "<h2>$MSG_Sample_Output</h2>
-        <pre class=sui-text-large><span class=sampledata>".($soutput)."</span></pre>";
-      }
-      if ($pr_flag||true)
-        echo "<h2>$MSG_HINT</h2>
-        <div class=sui-text-large><p>".nl2br($row['hint'])."</p></div>";
       if ($pr_flag){
         echo "[<a href='submitpage.php?id=$id'>Submit in New Window</a>]";
       }else{
