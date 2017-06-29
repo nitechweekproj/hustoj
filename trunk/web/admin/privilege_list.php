@@ -8,7 +8,7 @@ echo "<title>Privilege List</title>";
 echo "<h2 class=\"sui-page-header\">Privilege List</h2>";
 $sql="select * FROM privilege where rightstr in ('administrator','source_browser','contest_creator','http_judge','problem_editor') ";
 $result=pdo_query($sql) ;
-echo "<center><table class='table table-striped' width=60% border=1>";
+echo "<center><table class='sui-table table-zebra' width=60% border=1>";
 echo "<thead><tr><td>user<td>right<td>defunc</tr></thead>";
 foreach($result as $row){
 	echo "<tr>";
