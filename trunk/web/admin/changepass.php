@@ -22,11 +22,13 @@ if(isset($_POST['do'])){
   else echo "No such user! or He/Her is an administrator!";
 }
 ?>
-<form action='changepass.php' method=post>
-	<h2 class="sui-page-header">Change Password</h2><br />
-	User:<input type=text size=10 name="user_id"><br />
-	Pass:<input type=text size=10 name="passwd"><br />
-	<?php require_once("../include/set_post_key.php");?>
-	<input type='hidden' name='do' value='do'>
-	<input type=submit value='Change'>
-</form>
+<center>
+	<form class="sui-form" action='changepass.php' method=post>
+		<h2 class="sui-page-header">Change Password</h2><br />
+		User:<input type=text size=10 name="user_id" class="input-xlarge"><br />
+		Pass:<input type=text size=10 name="passwd" class="input-xlarge"><br />
+		<?php require_once("../include/set_post_key.php");?>
+		<input type='hidden' name='do' value='do'>
+		<input type=submit value='Change' class="sui-btn btn-large btn-primary"> 
+	</form>
+</center>
