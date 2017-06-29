@@ -43,6 +43,14 @@
       }
       echo "</center>";?>
 
+      <style>
+        .tab-wraped > li ul {
+          width: 140px;
+        }
+        .tab-wraped > li ul label {
+          width: 50px!important;
+        }
+      </style>
       <ul class="sui-nav nav-tabs tab-wraped">
         <li class="active"><a href="#desc" data-toggle="tab">
           <h3>Description</h3>
