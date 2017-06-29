@@ -47,13 +47,13 @@
         <li class="active"><a href="#desc" data-toggle="tab">
           <h3>Description</h3>
         </a></li>
-        <li class="active"><a href="#args" data-toggle="tab">
+        <li><a href="#args" data-toggle="tab">
           <h3>Arguments</h3>
         </a></li>
-        <li class="active"><a href="#example" data-toggle="tab">
+        <li><a href="#example" data-toggle="tab">
           <h3>Example</h3>
         </a></li>
-        <li class="active"><a href="#hints" data-toggle="tab">
+        <li><a href="#hints" data-toggle="tab">
           <h3>Hints</h3>
         </a></li>
       </ul>
