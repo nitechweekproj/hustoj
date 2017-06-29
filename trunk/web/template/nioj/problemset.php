@@ -22,7 +22,7 @@
   <body>
     <?php include("template/$OJ_TEMPLATE/nav.php");?>   
     <center>
-      <form class="sui-form  form-horizontal">
+      <form class="sui-form  form-horizontal" style="float:left">
         <div class="control-group">
           <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
           <div class="controls">
