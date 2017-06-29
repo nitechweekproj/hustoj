@@ -121,13 +121,13 @@ Minute:<input class=input-mini  type=text name=sminute size=2 value=<?php echo s
 Hour:<input class=input-mini  type=text name=ehour size=2 value=<?php echo substr($endtime,11,2)?>> 
 Minute:<input class=input-mini  type=text name=eminute size=2 value=<?php echo substr($endtime,14,2)?>></p>
 
-Public/Private:<select name=private>
+Public:<select name=private>
 	<option value=0 <?php echo $private=='0'?'selected=selected':''?>>Public</option>
 	<option value=1 <?php echo $private=='1'?'selected=selected':''?>>Private</option>
 </select>
 Password:<input type=text name=password value="<?php echo htmlentities($password,ENT_QUOTES,'utf-8')?>">
 <br>Problems:<input class=input-xxlarge type=text size=60 name=cproblem value='<?php echo $plist?>'>
-
+<br>
  Language:<select name="lang[]"  multiple="multiple"    style="height:100px">
 <?php
 $lang_count=count($language_ext);
@@ -152,7 +152,7 @@ if(isset($_COOKIE['lastlang'])) $lastlang=$_COOKIE['lastlang'];
 <p align=left>Description:<br><textarea class="kindeditor" rows=13 name=description cols=80><?php echo htmlentities($description,ENT_QUOTES,"UTF-8")?></textarea>
 
 
-Users:<textarea name="ulist" rows="20" cols="20"><?php if (isset($ulist)) { echo $ulist; } ?></textarea>
+Users:<textarea name="ulist" rows="3" cols="80"><?php if (isset($ulist)) { echo $ulist; } ?></textarea>
 <p><input type=submit value=Submit name=submit><input type=reset value=Reset name=reset></p>
 
 </form>
