@@ -123,9 +123,9 @@ else{
 	<h2 class="sui-page-header">Add Onsite Interview</h2>
 	<form class="sui-form form-horizontal" method=post>
 		<div class="control-group">
-			<label class="control-label">Title:</label>
+			<label for="inputTitile" class="control-label">Title:</label>
 	     	<div class="controls">
-	        	<input type=text name=title class="input-xlarge input-xfat" value="<?php echo isset($title)?$title:""?>">
+	        	<input type=text id="inputTitle" name=title class="input-xlarge input-xfat" value="<?php echo isset($title)?$title:""?>">
 	     	</div>
 	    </div>
 	    <div class="control-group">
