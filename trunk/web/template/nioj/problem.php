@@ -46,16 +46,16 @@
       <ul class="sui-nav nav-tabs tab-wraped">
         <li class="active"><a href="#desc" data-toggle="tab">
           <h3>Description</h3>
-        </li>
+        </a></li>
         <li class="active"><a href="#args" data-toggle="tab">
           <h3>Arguments</h3>
-        </li>
+        </a></li>
         <li class="active"><a href="#example" data-toggle="tab">
           <h3>Example</h3>
-        </li>
+        </a></li>
         <li class="active"><a href="#hints" data-toggle="tab">
           <h3>Hints</h3>
-        </li>
+        </a></li>
       </ul>
 
       <div class="tab-content tab-wraped">
