@@ -81,7 +81,7 @@ function writable($path){
 		Move<input type=input name='from'>->
 		<input type=input name='to'>
 		<input type='hidden' name='do' value='do'>
-		<input type=submit value=submit>
+		<input class="sui-btn btn-large btn-primary" type=submit value=submit>
 		<?php require_once("../include/set_post_key.php");?>
 	</form>
 	

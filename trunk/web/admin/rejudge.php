@@ -53,18 +53,18 @@ if (!(isset($_SESSION['administrator']))){
 	<li>Problem
 	<form action='rejudge.php' method=post>
 		<input type=input name='rjpid'>	<input type='hidden' name='do' value='do'>
-		<input type=submit value=submit>
+		<input class="sui-btn btn-large btn-primary" type=submit value=submit>
 		<?php require_once("../include/set_post_key.php");?>
 	</form>
 	<li>Solution
 	<form action='rejudge.php' method=post>
 		<input type=input name='rjsid'>	<input type='hidden' name='do' value='do'>
 		<input type=hidden name="postkey" value="<?php echo $_SESSION['postkey']?>">
-		<input type=submit value=submit>
+		<input class="sui-btn btn-large btn-primary" type=submit value=submit>
 	</form>
 	<li>Contest
 	<form action='rejudge.php' method=post>
 		<input type=input name='rjcid'>	<input type='hidden' name='do' value='do'>
 		<input type=hidden name="postkey" value="<?php echo $_SESSION['postkey']?>">
-		<input type=submit value=submit>
+		<input class="sui-btn btn-large btn-primary" type=submit value=submit>
 	</form>

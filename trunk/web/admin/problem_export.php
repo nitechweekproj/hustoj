@@ -11,8 +11,8 @@ if (!(isset($_SESSION['administrator']))){
 	to pid:<input type=text size=10 name="end" value=1000><br />
 	or in<input type=text size=40 name="in" value=""><br />
 	<input type='hidden' name='do' value='do'>
-	<input type=submit name=submit value='Export'>
-   <input type=submit value='Download'>
+	<input class="sui-btn btn-large btn-primary" type=submit name=submit value='Export'>
+   <input class="sui-btn btn-large btn-primary" type=submit value='Download'>
    <?php require_once("../include/set_post_key.php");?>
 </form>
 * from-to will working if empty IN <br>

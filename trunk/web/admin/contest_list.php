@@ -37,7 +37,7 @@ if(isset($_GET['keyword'])){
 	 $result=pdo_query($sql,$pstart,$pend);
 }
 ?>
-<form action=contest_list.php class=center><input name=keyword><input type=submit value="<?php echo $MSG_SEARCH?>" ></form>
+<form action=contest_list.php class=center><input name=keyword><input class="sui-btn btn-large btn-primary" type=submit value="<?php echo $MSG_SEARCH?>" ></form>
 
 <?php
 echo "<center><table class='sui-table table-bordered table-zebra'>";

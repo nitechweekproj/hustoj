@@ -156,7 +156,7 @@ if(isset($_COOKIE['lastlang'])) $lastlang=$_COOKIE['lastlang'];
 
 <br><br>
 Users:<textarea name="ulist" rows="3" cols="80"><?php if (isset($ulist)) { echo $ulist; } ?></textarea>
-<p><input type=submit value=Submit name=submit><input type=reset value=Reset name=reset></p>
+<p><input class="sui-btn btn-large btn-primary" type=submit value=Submit name=submit><input class="sui-btn btn-large btn-primary" type=reset value=Reset name=reset></p>
 
 </form>
 <?php require_once("../oj-footer.php");?>

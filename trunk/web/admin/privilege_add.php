@@ -31,13 +31,13 @@ while(list($key, $val)=each($rightarray)) {
 }
 ?></select><br />
 	<input type='hidden' name='do' value='do'>
-	<input type=submit value='Add'>
+	<input class="sui-btn btn-large btn-primary" type=submit value='Add'>
 </form>
 <form method=post>
 	<b>Add contest for User:</b><br />
 	User:<input type=text name="user_id"><br />
 	Contest:<input type=text name="rightstr"> c1000 for Contest1000<br />
 	<input type='hidden' name='do' value='do'>
-	<input type=submit value='Add'>
+	<input class="sui-btn btn-large btn-primary" type=submit value='Add'>
 	<input type=hidden name="postkey" value="<?php echo $_SESSION['postkey']?>">
 </form>
