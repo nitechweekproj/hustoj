@@ -57,14 +57,6 @@ if (isset($_SESSION['administrator'])){
 <?php }
 if (isset($_SESSION['administrator'])){
 ?><li>
-	<a href="source_give.php" target="main"><b><?php echo $MSG_GIVESOURCE?></b></a></li>
-<?php }
-if (isset($_SESSION['administrator'])){
-?><li>
-	<a href="problem_export.php" target="main"><b><?php echo $MSG_EXPORT." ".$MSG_PROBLEM?></b></a></li>
-<?php }
-if (isset($_SESSION['administrator'])){
-?><li>
 	<a href="problem_import.php" target="main"><b><?php echo $MSG_IMPORT." ".$MSG_PROBLEM?></b></a></li>
 <?php }?>
 </ol>

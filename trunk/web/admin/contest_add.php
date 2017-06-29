@@ -119,9 +119,8 @@ else{
 	}  
   include_once("kindeditor.php") ;?>
 
-	<center>
-		<h2 class="sui-page-header">Add Onsite Interview</h2>
-	</center>
+
+	<h2 class="sui-page-header">Add Onsite Interview</h2>
 	<form class="sui-form form-horizontal" method=post>
 		<div class="control-group">
 			<lable class="control-label">Title:</lable>
