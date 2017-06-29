@@ -36,9 +36,9 @@ include_once("kindeditor.php") ;
 <p align=left class="sui-text-large">Hint:<br>
 <textarea class="kindeditor" rows=13 name=hint cols=80></textarea>
 </p>
-<p>SpecialJudge: N<input type=radio name=spj value='0' checked>Y<input type=radio name=spj value='1'></p>
+<p>Special Judge: N<input class="radio-pretty inline checked" type=radio name=spj value='0' checked>Y<input type=radio name=spj value='1'></p>
 <p align=left class="sui-text-large">Source:<br><textarea name=source rows=1 cols=70></textarea></p>
-<p align=left class="sui-text-large">contest:
+<p align=left class="sui-text-large">Contest:
 	<select  name=contest_id>
 <?php
 
@@ -56,7 +56,7 @@ if (count($result)==0){
 </p>
 <div align=center>
 <?php require_once("../include/set_post_key.php");?>
-<input type=submit value=Submit name=submit>
+<input class="sui-btn btn-xlarge btn-primary" type=submit value=Submit name=submit>
 </div></form>
 <p>
 <?php 
