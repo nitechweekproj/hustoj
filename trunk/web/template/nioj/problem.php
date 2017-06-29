@@ -34,21 +34,14 @@
         }
         echo "<span class=sui-text-info>$MSG_Time_Limit: </span>".$row['time_limit']." Sec&nbsp;&nbsp;";
         echo "<span class=sui-text-info>$MSG_Memory_Limit: </span>".$row['memory_limit']." MB&nbsp;&nbsp;";
-        if ($pr_flag){
-          echo "[<a href='submitpage.php?id=$id'>$MSG_SUBMIT</a>]";
-        }else{
-          echo "[<a href='submitpage.php?cid=$cid&pid=$pid&langmask=$langmask'>$MSG_SUBMIT</a>]";
-        }
         
         if(isset($_SESSION['administrator'])){
           require_once("include/set_get_key.php");
       ?>
 
-      [<a href="admin/problem_edit.php?id=<?php echo $id?>&getkey=<?php echo $_SESSION['getkey']?>" >Edit</a>]
-      [<a href='javascript:phpfm(<?php echo $row['problem_id'];?>)'>TestData</a>]
       <?php
-      }
-
+      }?>
+      <?php
       echo "</center>";
       echo "<h2>$MSG_Description</h2><div class=sui-text-xlarge>".$row['description']."</div>";
       echo "<h2>$MSG_Input</h2><div class=sui-text-large>".$row['input']."</div>";
@@ -81,7 +74,8 @@
       [<a href='javascript:phpfm(<?php echo $row['problem_id'];?>)'>TestData</a>]
       <?php
       }
-    echo "</center>";
+      echo "</center>";
+      require("submitpage_frame.php");
     ?>
       </div>
 
