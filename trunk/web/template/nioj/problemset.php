@@ -23,8 +23,8 @@
     <?php include("template/$OJ_TEMPLATE/nav.php");?>
     <div class="sui-container">	    
       <div class="sui-container">
-        <form class="sui-form  form-horizontal">
-          <div class="control-group" align="center">
+        <form class="sui-form  form-horizontal" align="center">
+          <div class="control-group">
             <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
             <div class="controls">
               <button type="submit" class="sui-btn btn-primary"><?php echo $MSG_SEARCH?></button>
@@ -74,8 +74,8 @@
           <li class="next"><a href="problemset.php?page=<?php echo $view_total_page?>">&gt;&gt;</a></li>
         </ul>
       </div>
-      <form role="form" action=problem.php class="sui-form  form-horizontal">
-            <div class="control-group" align="center">
+      <form role="form" action=problem.php class="sui-form  form-horizontal" align="center">
+            <div class="control-group">
               <input name='id' type=text placeholder="Problem ID" class="input-default">
               <div class="controls">
                 <button type="submit" class="sui-btn btn-primary">Go</button>
