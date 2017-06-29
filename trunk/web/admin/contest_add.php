@@ -1,6 +1,6 @@
 <?php require_once("admin-header.php");?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8">
-<title>Add a contest</title>
+<title>Add interview</title>
 
 <?php
 	require_once("../include/db_info.inc.php");
@@ -121,112 +121,114 @@ else if(isset($_POST['problem2contest'])){
   include_once("kindeditor.php") ;
 ?>
 
-<center>
-	<h2 class="sui-page-header">Add Onsite Interview</h2>
-</center>
-<form class="sui-form form-horizontal" method=post>
-	<div class="control-group">
-		<lable class="control-label">Title:</lable>
-     	<div class="controls">
-        	<input type=text name=title class="input-xlarge input-xfat" value="<?php echo isset($title)?$title:""?>">
-     	</div>
-    </div>
-    <div class="control-group">
-    	<lable class="control-label">Start Time:</lable>
-    	<div class="controls">
-    		<p>Year:</p>
-            <input class="input-mini input-xfat" type=text name=syear value="<?php echo isset($title)?$title:""?>">
-            <p>Month:</p>
-            <input class="input-mini input-xfat" type=text name=smonth value=<?php echo date('m')?> size=2 >
-            <p>Day:</p>
-            <input class="input-mini input-xfat" type=text name=sday size=2 value=<?php echo date('d')?> >
-            <p>Hour:</p>
-            <input class="input-mini input-xfat" type=text name=shour size=2 value=<?php echo date('H')?>>
-            <p>Minute:</p>
-            <input class="input-mini input-xfat" type=text name=sminute value=00 size=2 ></p>
-        </div>
-    </div>
-    <div class="control-group">
-    	<lable class="control-label">End Time:</lable>
-    	<div class="controls">
-    		<p>Year:</p>
-            <input class="input-mini input-xfat" type=text name=eyear value="<?php echo isset($title)?$title:""?>">
-            <p>Month:</p>
-            <input class="input-mini input-xfat" type=text name=emonth value=<?php echo date('m')?> size=2 >
-            <p>Day:</p>
-            <input class="input-mini input-xfat" type=text name=eday size=2 value=<?phpecho date('d')+(date('H')+4>23?1:0)?> >
-            <p>Hour:</p>
-            <input class="input-mini input-xfat" type=text name=ehour size=2 value=<?php echo (date('H')+2)%24?>>
-            <p>Minute:</p>
-            <input class="input-mini input-xfat" type=text name=eminute value=00 size=2 ></p>
-        </div>
-    </div>
-    <div class="control-group">
-    	<lable class="control-label">Public:</lable>
-    	<div class="controls">
-    		<select name=private>
- 				<option value=0>Public</option>
-  				<option value=1>Private</option>
-  			</select>
-        </div>
-    </div>
+	<center>
+		<h2 class="sui-page-header">Add Onsite Interview</h2>
+	</center>
+	<form class="sui-form form-horizontal" method=post>
+		<div class="control-group">
+			<lable class="control-label">Title:</lable>
+	     	<div class="controls">
+	        	<input type=text name=title class="input-xlarge input-xfat" value="<?php echo isset($title)?$title:""?>">
+	     	</div>
+	    </div>
+	    <div class="control-group">
+	    	<lable class="control-label">Start Time:</lable>
+	    	<div class="controls">
+	    		<p>Year:</p>
+	            <input class="input-mini input-xfat" type=text name=syear value="<?php echo isset($title)?$title:""?>">
+	            <p>Month:</p>
+	            <input class="input-mini input-xfat" type=text name=smonth value=<?php echo date('m')?> size=2 >
+	            <p>Day:</p>
+	            <input class="input-mini input-xfat" type=text name=sday size=2 value=<?php echo date('d')?> >
+	            <p>Hour:</p>
+	            <input class="input-mini input-xfat" type=text name=shour size=2 value=<?php echo date('H')?>>
+	            <p>Minute:</p>
+	            <input class="input-mini input-xfat" type=text name=sminute value=00 size=2 ></p>
+	        </div>
+	    </div>
+	    <div class="control-group">
+	    	<lable class="control-label">End Time:</lable>
+	    	<div class="controls">
+	    		<p>Year:</p>
+	            <input class="input-mini input-xfat" type=text name=eyear value="<?php echo isset($title)?$title:""?>">
+	            <p>Month:</p>
+	            <input class="input-mini input-xfat" type=text name=emonth value=<?php echo date('m')?> size=2 >
+	            <p>Day:</p>
+	            <input class="input-mini input-xfat" type=text name=eday size=2 value=<?phpecho date('d')+(date('H')+4>23?1:0)?> >
+	            <p>Hour:</p>
+	            <input class="input-mini input-xfat" type=text name=ehour size=2 value=<?php echo (date('H')+2)%24?>>
+	            <p>Minute:</p>
+	            <input class="input-mini input-xfat" type=text name=eminute value=00 size=2 ></p>
+	        </div>
+	    </div>
+	    <div class="control-group">
+	    	<lable class="control-label">Public:</lable>
+	    	<div class="controls">
+	    		<select name=private>
+	 				<option value=0>Public</option>
+	  				<option value=1>Private</option>
+	  			</select>
+	        </div>
+	    </div>
 
-    <div class="control-group">
-    	<lable class="control-label">Public:</lable>
-    	<div class="controls">
-    		<select name=private>
- 				<option value=0>Public</option>
-  				<option value=1>Private</option>
-  			</select>
-        </div>
-        <lable class="control-label">Password:</lable>
-        <div class="controls">
-        	<input type=text name=password value="">
-        </div>
-    </div>
+	    <div class="control-group">
+	    	<lable class="control-label">Public:</lable>
+	    	<div class="controls">
+	    		<select name=private>
+	 				<option value=0>Public</option>
+	  				<option value=1>Private</option>
+	  			</select>
+	        </div>
+	        <lable class="control-label">Password:</lable>
+	        <div class="controls">
+	        	<input type=text name=password value="">
+	        </div>
+	    </div>
 
-    <div class="control-group">
-    	<lable class="control-label">Language:</lable>
-    	<div class="controls">
-            <select name="lang[]" multiple="multiple" style="height:20px">
-	            <?php
-					$lang_count=count($language_ext);
- 					$langmask=$OJ_LANGMASK;
- 					for($i=0;$i<$lang_count;$i++){
-                 		echo "<option value=$i selected>
-                        	".$language_name[$i]."
-                 		</option>";
-  					}?>
-  			</select>
-        </div>
-    </div>
-    <?php require_once("../include/set_post_key.php");?>
+	    <div class="control-group">
+	    	<lable class="control-label">Language:</lable>
+	    	<div class="controls">
+	            <select name="lang[]" multiple="multiple" style="height:20px">
+		            <?php
+						$lang_count=count($language_ext);
+	 					$langmask=$OJ_LANGMASK;
+	 					for($i=0;$i<$lang_count;$i++){
+	                 		echo "<option value=$i selected>
+	                        	".$language_name[$i]."
+	                 		</option>";
+	  					}?>
+	  			</select>
+	        </div>
+	    </div>
+	    <?php require_once("../include/set_post_key.php");?>
 
-    <div class="control-group">
-    	<lable class="control-label">Problems:</lable>
-    	<div class="controls">
-    		<input class=input-xlarge placeholder="Example:1000,1001,1002" type=text name=cproblem value="<?php echo isset($plist)?$plist:""?>">
-        </div>
-    </div>
+	    <div class="control-group">
+	    	<lable class="control-label">Problems:</lable>
+	    	<div class="controls">
+	    		<input class=input-xlarge placeholder="Example:1000,1001,1002" type=text name=cproblem value="<?php echo isset($plist)?$plist:""?>">
+	        </div>
+	    </div>
 
-    <div class="control-group">
-    	<lable class="control-label">Description:</lable>
-    	<div class="controls">
-    		<textarea class=kindeditor rows=13 name=description cols=80></textarea>
-        </div>
-    </div>
+	    <div class="control-group">
+	    	<lable class="control-label">Description:</lable>
+	    	<div class="controls">
+	    		<textarea class=kindeditor rows=13 name=description cols=80></textarea>
+	        </div>
+	    </div>
 
-    <div class="control-group">
-    	<lable class="control-label">Users:</lable>
-    	<div class="controls">
-    		<textarea name="ulist" rows="5" cols="10"></textarea>
-        </div>
-    </div>
+	    <div class="control-group">
+	    	<lable class="control-label">Users:</lable>
+	    	<div class="controls">
+	    		<textarea name="ulist" rows="5" cols="10"></textarea>
+	        </div>
+	    </div>
 
-    <div class="control-group">
-    	<div class="controls">
-    		<input type=submit value=Submit name=submit><input type=reset value=Reset name=reset>
-        </div>
-    </div>
-</form>
+	    <div class="control-group">
+	    	<div class="controls">
+	    		<input type=submit value=Submit name=submit><input type=reset value=Reset name=reset>
+	        </div>
+	    </div>
+	</form>
+
+<php }?>
 
