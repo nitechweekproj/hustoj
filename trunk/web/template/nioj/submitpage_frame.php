@@ -71,7 +71,6 @@
  <script>
 var sid=0;
 var i=0;
-var using_blockly=false;
 var judge_result=[<?php
 foreach($judge_result as $result){
 echo "'$result',";
@@ -86,7 +85,7 @@ function fresh_result(solution_id)
 {
    var tb=window.document.getElementById('result');
    if(solution_id==undefined){
-      tb.innerHTML="Vcode Error!";     
+      tb.innerHTML="Vcode Error!";
       if($("#vcode")!=null) $("#vcode").click();
       return ;
    }
@@ -151,8 +150,6 @@ return ret+"";
 }
 var count=0;
 function do_submit(){
-   if(using_blockly) 
-       translate();
    if(typeof(eAL) != "undefined"){ eAL.toggle("source");eAL.toggle("source");}
    var mark="<?php echo isset($id)?'problem_id':'cid';?>";
    var problem_id=document.getElementById(mark);
@@ -210,39 +207,5 @@ function reloadtemplate(lang){
    if(i!=-1) url=url.substring(0,i-1);
    if(confirm("<?php echo  $MSG_LOAD_TEMPLATE_CONFIRM?>"))
         document.location.href=url;
-}
-function openBlockly(){
-   $("#frame_source").hide();
-   $("#TestRun").hide();
-   $("#language")[0].scrollIntoView();
-   $("#language").val(6).hide();
-   $("#language_span").hide();
-   $("#EditAreaArroundInfos_source").hide();
-   $('#blockly').html('<iframe name=\'frmBlockly\' width=90% height=580 src=\'blockly/demos/code/index.html\'></iframe>'); 
-  $("#blockly_loader").hide();
-  $("#transrun").show();
-  $("#Submit").prop('disabled', true);
-  using_blockly=true;
-  
-}
-function translate(){
-  var source=$("#source");
-  var editor=$(window.frames['frame_source'].document).find('textarea[id=textarea]');
-  var blockly=$(window.frames['frmBlockly'].document);
-  var tb=blockly.find('td[id=tab_python]');
-  var python=blockly.find('pre[id=content_python]');
-  tb.click();
-  blockly.find('td[id=tab_blocks]').click();
-  eAL.toggle("source");
-  source.val(python.text());
-  eAL.toggle("source");
-  $("#language").val(6);
- 
-}
-function loadFromBlockly(){
- translate();
- do_test_run();
-  $("#frame_source").hide();
-//  $("#Submit").prop('disabled', false);
 }
 </script>
