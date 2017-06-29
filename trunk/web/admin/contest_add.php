@@ -132,31 +132,26 @@ else{
 	    <div class="control-group">
 	    	<lable class="control-label">Start Time:</lable>
 	    	<div class="controls">
-	    		Year:
 	            <input class="input-xfat" type=text name=syear value=<?php echo date('y')?> size=4>
-	            Month:
+	            <lable>Y</lable>
 	            <input class="input-xfat" type=text name=smonth value=<?php echo date('m')?> size=2 >
-	            Day:
+	            <lable>M</lable>
 	            <input class="input-xfat" type=text name=sday size=2 value=<?php echo date('d')?> >
-	            Hour:
+	            <lable>D</lable>
 	            <input class="input-xfat" type=text name=shour size=2 value=<?php echo date('H')?>>
-	            Minute:
+	            <lable>H</lable>
 	            <input class="input-xfat" type=text name=sminute value=00 size=2 ></p>
+	            <lable>M</lable>
 	        </div>
 	    </div>
 	    <div class="control-group">
 	    	<lable class="control-label">End Time:</lable>
 	    	<div class="controls">
-	    		Year:
-	            <input class="input-mini input-xfat" type=text name=eyear value=<?php echo date('y')?> size=4>
-	            Month:
-	            <input class="input-mini input-xfat" type=text name=emonth value=<?php echo date('m')?> size=2 >
-	            Day:
-	            <input class="input-mini input-xfat" type=text name=eday size=2 value=<?php echo date('d')+(date('H')+4>23?1:0)?> >
-	            Hour:
-	            <input class="input-mini input-xfat" type=text name=ehour size=2 value=<?php echo (date('H')+2)%24?>>
-	            Minute:
-	            <input class="input-mini input-xfat" type=text name=eminute value=00 size=2 ></p>
+	            <input class="input-xfat" type=text name=eyear value=<?php echo date('y')?> size=4>
+	            <input class="input-xfat" type=text name=emonth value=<?php echo date('m')?> size=2 >
+	            <input class="input-xfat" type=text name=eday size=2 value=<?php echo date('d')+(date('H')+4>23?1:0)?> >
+	            <input class="input-xfat" type=text name=ehour size=2 value=<?php echo (date('H')+2)%24?>>
+	            <input class="input-xfat" type=text name=eminute value=00 size=2 ></p>
 	        </div>
 	    </div>
 
@@ -212,12 +207,10 @@ else{
 	        </div>
 	    </div>
 
-	    <div class="control-group">
+	    <div class="control-group" align="center">
 	    	<div class="controls">
-	    		<center>
-		    		<input type=submit value=Submit name=submit class="sui-btn btn-large btn-primary">
-		    		<input type=reset value=Reset name=reset class="sui-btn btn-large btn-primary">
-	    		</center>
+	    		<input type=submit value=Submit name=submit class="sui-btn btn-large btn-primary">
+	    		<input type=reset value=Reset name=reset class="sui-btn btn-large btn-primary">
 	        </div>
 	    </div>
 	</form>
