@@ -24,12 +24,12 @@
     <div class="sui-container">	    
       <?php
         if ($pr_flag){
-          echo "<h1>$MSG_PROBLEM ".$row['problem_id']." --". $row['title']."</h1>";
+          echo "<title>$MSG_PROBLEM ".$row['problem_id']." --". $row['title']."</title>";
           echo "<center><h2>$id: ".$row['title']."</h2>";
         }else{
           $PID="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
           $id=$row['problem_id'];
-          echo "<h1>$MSG_PROBLEM ".$PID[$pid].": ".$row['title']." </h1>";
+          echo "<title>$MSG_PROBLEM ".$PID[$pid].": ".$row['title']." </title>";
           echo "<center><h2>$MSG_PROBLEM ".$PID[$pid].": ".$row['title']."</h2>";
         }
         echo "<span>$MSG_Time_Limit: </span>".$row['time_limit']." Sec&nbsp;&nbsp;";
@@ -41,8 +41,6 @@
         }else{
           echo "[<a href='submitpage.php?cid=$cid&pid=$pid&langmask=$langmask'>$MSG_SUBMIT</a>]";
         }
-        echo "[<a href='problemstatus.php?id=".$row['problem_id']."'>$MSG_STATUS</a>]";
-        echo "[<a href='bbs.php?pid=".$row['problem_id']."$ucid'>$MSG_BBS</a>]";
         
         if(isset($_SESSION['administrator'])){
           require_once("include/set_get_key.php");
