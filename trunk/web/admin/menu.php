@@ -17,7 +17,7 @@
 <ol class="sui-nav nav-list">
 	<li class="nav-header">Admin</li>
 	<li>
-		<a href="../index.php" target="main"><b>Home Page</b></a></li>	
+		<a href="../index.php" target="_top"><b>Home Page</b></a></li>	
 <?php
 if (isset($_SESSION['administrator'])||isset($_SESSION['problem_editor'])){
 ?>
