@@ -125,10 +125,11 @@ Public:<select name=private>
 	<option value=0 <?php echo $private=='0'?'selected=selected':''?>>Public</option>
 	<option value=1 <?php echo $private=='1'?'selected=selected':''?>>Private</option>
 </select>
+<br><br>
 Password:<input type=text name=password value="<?php echo htmlentities($password,ENT_QUOTES,'utf-8')?>">
 <br>Problems:<input class=input-xxlarge type=text size=60 name=cproblem value='<?php echo $plist?>'>
 <br><br><br>
- Language:<select name="lang[]"  multiple="multiple"    style="height:100px">
+ Language:<select name="lang[]"  multiple="multiple" style="height:100px;margin-top:30px">
 <?php
 $lang_count=count($language_ext);
 
@@ -152,7 +153,7 @@ if(isset($_COOKIE['lastlang'])) $lastlang=$_COOKIE['lastlang'];
 <br>
 <p align=left>Description:<br><textarea class="kindeditor" rows=13 name=description cols=80><?php echo htmlentities($description,ENT_QUOTES,"UTF-8")?></textarea>
 
-<br><br>
+<br><br><br><br><br><br>
 Users:<textarea name="ulist" rows="3" cols="80"><?php if (isset($ulist)) { echo $ulist; } ?></textarea>
 <p><input type=submit value=Submit name=submit><input type=reset value=Reset name=reset></p>
 
