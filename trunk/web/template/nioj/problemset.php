@@ -24,7 +24,7 @@
     <div class="sui-container">	    
       <div class="sui-container">
         <form class="sui-form  form-horizontal">
-          <div class="control-group">
+          <div class="control-group" style="align:center">
             <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
             <div class="controls">
               <button type="submit" class="sui-btn btn-primary"><?php echo $MSG_SEARCH?></button>
@@ -75,7 +75,7 @@
         </ul>
       </div>
       <form role="form" action=problem.php class="sui-form  form-horizontal">
-            <div class="control-group">
+            <div class="control-group" style="align:center">
               <input name='id' type=text placeholder="Problem ID" class="input-default">
               <div class="controls">
                 <button type="submit" class="sui-btn btn-primary">Go</button>
