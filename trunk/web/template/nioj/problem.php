@@ -42,7 +42,8 @@
       <?php
       }
       echo "</center>";?>
-
+      
+      <center>
       <?php
       if ($pr_flag){
         echo "[<a href='submitpage.php?id=$id'>Submit in New Window</a>]";
@@ -56,10 +57,8 @@
       [<a href="admin/problem_edit.php?id=<?php echo $id?>&getkey=<?php echo $_SESSION['getkey']?>" >Edit</a>]
       [<a href='javascript:phpfm(<?php echo $row['problem_id'];?>)'>TestData</a>]
       <?php
-      }
-      echo "</center>";
-      require("submitpage_frame.php");
-    ?>
+      }?>
+      </center>
 
       <div class="sui-container" style="margin-top:20px;width:80%">
         <ul class="sui-nav nav-tabs tab-wraped">
@@ -108,6 +107,10 @@
           </div>
         </div>
       </div>
+
+      <?php
+      echo "</center>";
+      require("submitpage_frame.php");?>
       </div>
 
     </div> <!-- /container -->
