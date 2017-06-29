@@ -69,7 +69,7 @@
           </div>
         <?php } else{?>
           <div class="sui-container" style="margin-top:20px">  
-            <p class="sui-lead">For administration functions, please go to <a href="admin">Admin</a></p>
+            <h3>For administration functions, please go to <a href="admin">Admin</a></h3>
           </div>
         <?php }}?>
       </div>

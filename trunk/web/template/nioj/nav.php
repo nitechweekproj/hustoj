@@ -39,7 +39,7 @@
       <?php }?>
           </ul>
           <ul class="sui-nav pull-right" style="font-size:14px">
-              <li class="sui-dropdown"><a data-toggle="dropdown" class="dropdown-toggle"><span id="profile">Login</span><i class="caret"></i></a>
+              <li class="sui-dropdown"><a href="index.php" data-toggle="dropdown" class="dropdown-toggle"><span id="profile">Login</span><i class="caret"></i></a>
                 <ul role="menu" class="sui-dropdown-menu">
                   <script src="<?php echo $path_fix."template/$OJ_TEMPLATE/profile.php?".rand();?>" ></script>
                 </ul>
