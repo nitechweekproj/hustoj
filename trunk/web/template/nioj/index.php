@@ -74,6 +74,7 @@
         <?php }}?>
       </div>
     </div>
+    <?php require("template/$OJ_TEMPLATE/nioj_footer.php");?>  
     <!-- Placed at the end of the document so the pages load faster -->
     <?php include("template/$OJ_TEMPLATE/js.php");?>	    
   </body>
