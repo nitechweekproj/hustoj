@@ -43,7 +43,7 @@
       }
       echo "</center>";?>
 
-      <div class="sui-container" style="margin-top:20px;width:80%;height:60px">
+      <div class="sui-container" style="margin-top:20px;width:80%">
         <ul class="sui-nav nav-tabs tab-wraped">
           <li class="active"><a href="#desc" data-toggle="tab">
             <h3>Description</h3>
@@ -58,37 +58,36 @@
             <h3>Hints</h3>
           </a></li>
         </ul>
-      </div>
-
-      <div class="tab-content tab-wraped" style="width:80%">
-        <div id="desc" class="tab-pane active">
-          <?php
-            echo "<div class=sui-text-xlarge>".$row['description']."</div>";?>
-        </div>
-        <div id="args" class="tab-pane">
-          <?php
-            echo "<h2>$MSG_Input</h2><div class=sui-text-large>".$row['input']."</div>";
-            echo "<h2>$MSG_Output</h2><div class=sui-text-large>".$row['output']."</div>";?>
-        </div>
-        <div id="example" class="tab-pane">
-          <?php
-            $sinput=str_replace("<","&lt;",$row['sample_input']);
-            $sinput=str_replace(">","&gt;",$sinput);
-            $soutput=str_replace("<","&lt;",$row['sample_output']);
-            $soutput=str_replace(">","&gt;",$soutput);
-            if(strlen($sinput)) {
-              echo "<h2>$MSG_Sample_Input</h2>
-              <pre class=sui-text-large><span class=sampledata>".($sinput)."</span></pre>";
-            }
-            if(strlen($soutput)){
-              echo "<h2>$MSG_Sample_Output</h2>
-              <pre class=sui-text-large><span class=sampledata>".($soutput)."</span></pre>";
-            }?>
-        </div>
-        <div id="hints" class="tab-pane">
-          <?php
-            echo "<h2>$MSG_HINT</h2>
-            <div class=sui-text-large><p>".nl2br($row['hint'])."</p></div>";?>
+        <div class="tab-content tab-wraped">
+          <div id="desc" class="tab-pane active">
+            <?php
+              echo "<div class=sui-text-xlarge>".$row['description']."</div>";?>
+          </div>
+          <div id="args" class="tab-pane">
+            <?php
+              echo "<h2>$MSG_Input</h2><div class=sui-text-large>".$row['input']."</div>";
+              echo "<h2>$MSG_Output</h2><div class=sui-text-large>".$row['output']."</div>";?>
+          </div>
+          <div id="example" class="tab-pane">
+            <?php
+              $sinput=str_replace("<","&lt;",$row['sample_input']);
+              $sinput=str_replace(">","&gt;",$sinput);
+              $soutput=str_replace("<","&lt;",$row['sample_output']);
+              $soutput=str_replace(">","&gt;",$soutput);
+              if(strlen($sinput)) {
+                echo "<h2>$MSG_Sample_Input</h2>
+                <pre class=sui-text-large><span class=sampledata>".($sinput)."</span></pre>";
+              }
+              if(strlen($soutput)){
+                echo "<h2>$MSG_Sample_Output</h2>
+                <pre class=sui-text-large><span class=sampledata>".($soutput)."</span></pre>";
+              }?>
+          </div>
+          <div id="hints" class="tab-pane">
+            <?php
+              echo "<h2>$MSG_HINT</h2>
+              <div class=sui-text-large><p>".nl2br($row['hint'])."</p></div>";?>
+          </div>
         </div>
       </div>
 
