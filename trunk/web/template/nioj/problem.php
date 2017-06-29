@@ -41,7 +41,6 @@
 
       <?php
       }
-      <?php
         if ($pr_flag){
           echo "[<a href='submitpage.php?id=$id'>Submit in New Window</a>]";
         }else{
@@ -57,7 +56,6 @@
         }
         echo "</center>";
         require("submitpage_frame.php");
-      ?>
       echo "</center>";?>
 
       <div class="sui-container" style="margin-top:20px;width:80%">
