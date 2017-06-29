@@ -22,7 +22,7 @@
   <body>
     <?php include("template/$OJ_TEMPLATE/nav.php");?>   
     <center>
-      <form class="sui-form  form-horizontal" style="float:left">
+      <form class="sui-form  form-horizontal">
         <div class="control-group">
           <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
           <div class="controls">
@@ -30,7 +30,7 @@
           </div>
         </div>
       </form>
-      <form role="form" action=problem.php class="sui-form  form-horizontal">
+      <form role="form" action=problem.php class="sui-form  form-horizontal" style="display:inline">
         <div class="control-group">
           <input name='id' type=text placeholder="Problem ID" class="input-default">
           <div class="controls">
