@@ -59,7 +59,7 @@
       </table>
     </div>
     <center>
-      <div class="sui-pagination" style="display:inline">
+      <div class="sui-pagination" style="float:left">
         <ul>
           <li class="prev"><a href="problemset.php?page=1">&lt;&lt;</a></li>
           <?php
@@ -76,7 +76,7 @@
           <li class="next"><a href="problemset.php?page=<?php echo $view_total_page?>">&gt;&gt;</a></li>
         </ul>
       </div>
-      <form role="form" action=problem.php class="sui-form  form-horizontal" style="display:inline">
+      <form role="form" action=problem.php class="sui-form  form-horizontal">
         <div class="control-group">
           <input name='id' type=text placeholder="Problem ID" class="input-default">
           <div class="controls">
