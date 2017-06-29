@@ -22,15 +22,21 @@
   <body>
     <?php include("template/$OJ_TEMPLATE/nav.php");?>
     <div class="sui-container">	    
-      <div class="sui-container">
-        <form class="sui-form  form-horizontal" align="center">
-          <div class="control-group">
-            <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
-            <div class="controls">
-              <button type="submit" class="sui-btn btn-primary"><?php echo $MSG_SEARCH?></button>
+      <div class="grid-demo">
+        <div class="span-2">
+        </div>
+        <div class="span-2">
+          <form class="sui-form  form-horizontal" align="center">
+            <div class="control-group">
+              <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
+              <div class="controls">
+                <button type="submit" class="sui-btn btn-primary"><?php echo $MSG_SEARCH?></button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
+        <div class="span-2">
+        </div>
       </div>
 
       <table id='problemset' width='90%' class='sui-table table-zebra table-bordered'>
