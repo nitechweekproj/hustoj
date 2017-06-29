@@ -26,16 +26,14 @@ if(isset($_POST['do'])){
    <h2 class="sui-page-header">Change Password</h2>
    <form class="sui-form form-horizontal" action='changepass.php' method=post>
       <div class="control-group">
-         <label class="control-label">User ID:</label>
          <div class="controls">
-            <input type=text name="user_id" class="input-xlarge input-fat">
+            <input type=text name="user_id" class="input-xlarge input-fat" placeholder="User ID">
          </div>
       </div>
 
       <div class="control-group">
-         <label class="control-label">Password:</label>
          <div class="controls">
-            <input type=text size=10 name="passwd" class="input-xlarge input-fat">
+            <input type=text size=10 name="passwd" class="input-xlarge input-fat" placeholder="Password">
          </div>
       </div>
 
