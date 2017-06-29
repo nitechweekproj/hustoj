@@ -13,8 +13,6 @@
 
 <body>
    <h1 class="sui-page-header"><i class="sui-icon icon-touch-setting2" style="margin-right:1em;"></i>System Administration</h1>
-   <?php require("../contest.php"); ?>
-   <?php require("../template/$OJ_TEMPLATE/contestset_frame.php"); ?>
 </body>
 </html>
 

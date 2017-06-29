@@ -3,8 +3,6 @@
 <link href="http://g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css" rel="stylesheet">
 <script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="http://g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js"></script>
-<link rel=stylesheet href='../include/hoj.css' type='text/css'>
-<script src="../template/bs3/jquery.min.js"></script>
 <script>
 $("document").ready(function (){
   $("form").append("<div id='csrf' />");
