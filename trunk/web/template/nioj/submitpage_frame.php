@@ -35,7 +35,6 @@
           //$PID="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
           //if ($pid>25) $pid=25;
           ?>
-          Problem <span class='sui-text-large sui-text-inf'><b><?php echo chr($pid+ord('A'))?></b></span> of Interview <span class='sui-text-large sui-text-inf'><b><?php echo $cid?></b></span><br>
           <input id="cid" type='hidden' value='<?php echo $cid?>' name="cid">
           <input id="pid" type='hidden' value='<?php echo $pid?>' name="pid">
           <?php }?>
@@ -61,15 +60,10 @@
        <br>
        </span>
        <textarea style="width:80%" cols=180 rows=20 id="source" name="source"><?php echo htmlentities($view_src,ENT_QUOTES,"UTF-8")?></textarea><br>
-       <?php echo $MSG_Input?>:<textarea style="width:30%" cols=40 rows=5 id="input_text" name="input_text" ><?php echo $view_sample_input?></textarea>
-       <?php echo $MSG_Output?>:
-       <textarea style="width:30%" cols=10 rows=5 id="out" name="out" >SHOULD BE:
-       <?php echo $view_sample_output?>
-       </textarea>
        <br>
        <input id="Submit" class="btn btn-info" type=button value="<?php echo $MSG_SUBMIT?>" onclick="do_submit();" >
        <?php if (isset($OJ_TEST_RUN)&&$OJ_TEST_RUN){?>
-          <input id="TestRun" class="btn btn-info" type=button value="<?php echo $MSG_TR?>" onclick=do_test_run();>
+          <input id="TestRun" class="sui-btn btn-xlarge btn-primary" type=button value="<?php echo $MSG_TR?>" onclick=do_test_run();>
        <?php }?>
     </form>
   </center>
