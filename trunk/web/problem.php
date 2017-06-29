@@ -97,11 +97,11 @@ if (count($result)!=1){
                                
                 }else{
                         $view_title= "<title>$MSG_NO_SUCH_PROBLEM!</title>";
-                        $view_errors.= "<h2>$MSG_NO_SUCH_PROBLEM!</h2>";
+                        $view_errors.= "<h2>111$MSG_NO_SUCH_PROBLEM!</h2>";
                 }
    }else{
                 $view_title= "<title>$MSG_NO_SUCH_PROBLEM!</title>";
-                $view_errors.= "<h2>$MSG_NO_SUCH_PROBLEM!</h2>";
+                $view_errors.= "<h2>222$MSG_NO_SUCH_PROBLEM!</h2>";
         }
         require("template/".$OJ_TEMPLATE."/error.php");
         exit(0);

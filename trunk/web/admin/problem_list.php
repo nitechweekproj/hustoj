@@ -28,15 +28,6 @@ $pend=$pstart+$page_cnt;
 echo "<title>Problem List</title>";
 echo "<h2 class=\"sui-page-header\">Problem List</h2>";
 echo "<form action=problem_list.php>";
-echo "<select class='input-mini' onchange=\"location.href='problem_list.php?page='+this.value;\">";
-for ($i=1;$i<=$cnt;$i++){
-        if ($i>1) echo '&nbsp;';
-        if ($i==$page) echo "<option value='$i' selected>";
-        else  echo "<option value='$i'>";
-        echo $i+9;
-        echo "**</option>";
-}
-echo "</select>";
 $sql="";
 if($keyword) {
 	$keyword="%$keyword%";
@@ -50,9 +41,9 @@ if($keyword) {
 <form action=problem_list.php><input name=keyword><input type=submit value="<?php echo $MSG_SEARCH?>" ></form>
 
 <?php
-echo "<center><table class='sui-table'>";
+echo "<center><table class='sui-table table-bordered table-zebra'>";
 echo "<form method=post action=contest_add.php>";
-echo "<tr><td colspan=7><input type=submit name='problem2contest' value='CheckToNewContest'>";
+echo "<tr><td colspan=7><input type=submit name='problem2contest' value='Check To New Contest'>";
 echo "<tr><td>PID<td>Title<td>AC<td>Date";
 if(isset($_SESSION['administrator'])||isset($_SESSION['problem_editor'])){
         if(isset($_SESSION['administrator']))   echo "<td>Status<td>Delete";
@@ -83,7 +74,7 @@ foreach($result as $row){
         }
         echo "</tr>";
 }
-echo "<tr><td colspan=7><input type=submit name='problem2contest' value='CheckToNewContest'>";
+echo "<tr><td colspan=7><input type=submit name='problem2contest' value='Check To New Contest'>";
 echo "</tr></form>";
 echo "</table></center>";
 ?>

@@ -20,6 +20,7 @@ if (isset($_GET['page'])){
 }else $page=$cnt;
 $pstart=$base+$page_cnt*intval($page-1);
 $pend=$pstart+$page_cnt;
+echo "<label>Page: </label>";
 for ($i=1;$i<=$cnt;$i++){
         if ($i>1) echo '&nbsp;';
         #if ($i==$page) echo "<span class=red>$i</span>";
@@ -39,7 +40,7 @@ if(isset($_GET['keyword'])){
 <form action=contest_list.php class=center><input name=keyword><input type=submit value="<?php echo $MSG_SEARCH?>" ></form>
 
 <?php
-echo "<center><table class='sui-table'>";
+echo "<center><table class='sui-table table-bordered table-zebra'>";
 echo "<tr><td>ContestID<td>Title<td>StartTime<td>EndTime<td>Private<td>Status<td>Edit<td>Copy<td>Export<td>Logs";
 echo "</tr>";
 foreach($result as $row){

@@ -20,11 +20,9 @@
   </head>
 
   <body>
-
-    <div class="container">
     <?php include("template/$OJ_TEMPLATE/nav.php");?>	    
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <div class="sui-container">
 	
 <link href='highlight/styles/shCore.css' rel='stylesheet' type='text/css'/>
 <link href='highlight/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
@@ -46,35 +44,33 @@ SyntaxHighlighter.config.clipboardSwf = 'highlight/scripts/clipboard.swf';
 SyntaxHighlighter.all();
 </script>
 <?php
-if ($ok==true){
-if($view_user_id!=$_SESSION['user_id'])
-echo "<a href='mail.php?to_user=$view_user_id&title=$MSG_SUBMIT $id'>Mail the auther</a>";
-$brush=strtolower($language_name[$slanguage]);
-if ($brush=='pascal') $brush='delphi';
-if ($brush=='obj-c') $brush='c';
-if ($brush=='freebasic') $brush='vb';
-if ($brush=='swift') $brush='csharp';
-echo "<pre class=\"brush:".$brush.";\">";
-ob_start();
-echo "/**************************************************************\n";
-echo "\tProblem: $sproblem_id\n\tUser: $suser_id\n";
-echo "\tLanguage: ".$language_name[$slanguage]."\n\tResult: ".$judge_result[$sresult]."\n";
-if ($sresult==4){
-echo "\tTime:".$stime." ms\n";
-echo "\tMemory:".$smemory." kb\n";
-}
-echo "****************************************************************/\n\n";
-$auth=ob_get_contents();
-ob_end_clean();
-echo htmlentities(str_replace("\n\r","\n",$view_source),ENT_QUOTES,"utf-8")."\n".$auth."</pre>";
-}else{
-echo "I am sorry, You could not view this code!";
-}
+if ($ok==true || isset($_SESSION['administrator'])){
+  $brush=strtolower($language_name[$slanguage]);
+  if ($brush=='pascal') $brush='delphi';
+  if ($brush=='obj-c') $brush='c';
+  if ($brush=='freebasic') $brush='vb';
+  if ($brush=='swift') $brush='csharp';
+  echo "<pre class=\"brush:".$brush.";\">";
+  ob_start();
+  echo "/**************************************************************\n";
+  echo "\tProblem: $sproblem_id\n\tUser: $suser_id\n";
+  echo "\tLanguage: ".$language_name[$slanguage]."\n\tResult: ".$judge_result[$sresult]."\n";
+  if ($sresult==4){
+  echo "\tTime:".$stime." ms\n";
+  echo "\tMemory:".$smemory." kb\n";
+  }
+  echo "****************************************************************/\n\n";
+  $auth=ob_get_contents();
+  ob_end_clean();
+  echo htmlentities(str_replace("\n\r","\n",$view_source),ENT_QUOTES,"utf-8")."\n".$auth."</pre>";
+  }else{
+    echo "<div class=\"sui-msg msg-large msg-block msg-stop\">
+      <div class=\"msg-con\">Sorry, you cannot view this code.</div>
+      <s class=\"msg-icon\"></s>
+      </div>";
+  }
 ?>
-      </div>
-
-    </div> <!-- /container -->
-
+</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

@@ -18,7 +18,7 @@ if (!(isset($_SESSION['administrator'])
 <?php
 include_once("kindeditor.php") ;
 ?>
-<p align="center"><font color="#333399" size="4">Welcome To Administrator's Page of Judge Online of ACM ICPC, <?php echo $OJ_NAME?>.</font>
+<p align="center"><font color="#333399" size="4">Administrator's Page of <?php echo $OJ_NAME?>.</font>
 <td width="100"></td>
 </center>
 <hr>

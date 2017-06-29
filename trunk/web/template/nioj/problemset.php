@@ -21,27 +21,31 @@
 
   <body>
     <?php include("template/$OJ_TEMPLATE/nav.php");?>
-    <div class="sui-container">	    
-      <div class="sui-container">
-        <form method="post" role="form" action=problem.php class="sui-form  form-horizontal">
-            <div class="control-group">
-              <input name='id' type=text placeholder="Problem ID" class="input-default">
-              <div class="controls">
-                <button type="submit" class="sui-btn btn-large btn-primary">Go</button>
+    <div class="sui-container">   
+      <div class="grid-demo">
+        <div class="sui-row">
+          <div class="span4">
+          </div>
+          <div class="span4">
+            <form class="sui-form  form-horizontal" align="center">
+              <div class="control-group">
+                <input name=search type=text placeholder="Keywords Title or Source" class="input-large">
+                <div class="controls">
+                  <button type="submit" class="sui-btn btn-primary"><?php echo $MSG_SEARCH?></button>
+                </div>
               </div>
-              <input name=search type=text placeholder="Keywords Title or Source" class="input-default">
-              <div class="controls">
-                <button type="submit" class="sui-btn btn-large btn-primary"><?php echo $MSG_SEARCH?></button>
-              </div>
-            </div>
-        </form>
+            </form>
+          </div>
+          <div class="span4">
+          </div>
+        </div>
       </div>
 
-      <table id='problemset' width='90%' class='sui-table table-zebra'>
+      <table id='problemset' width='90%' class='sui-table table-zebra table-bordered'>
         <thead>
         <tr>
           <th width='5'></th>
-          <th width='20'><?php echo $MSG_PROBLEM_ID?></th>
+          <th width='100'><?php echo $MSG_PROBLEM_ID?></th>
           <th><?php echo $MSG_TITLE?></th>
           <th class='hidden-xs' width='10%'><?php echo $MSG_SOURCE?></th>
           <th width=60 ><?php echo $MSG_AC?></th>
@@ -77,6 +81,24 @@
           ?>
           <li class="next"><a href="problemset.php?page=<?php echo $view_total_page?>">&gt;&gt;</a></li>
         </ul>
+      </div>
+      <div class="grid-demo">
+        <div class="sui-row">
+          <div class="span4">
+          </div>
+          <div class="span4">
+            <form role="form" action=problem.php class="sui-form  form-horizontal" align="center">
+              <div class="control-group">
+                <input name='id' type=text placeholder="Problem ID" class="input-default">
+                <div class="controls">
+                  <button type="submit" class="sui-btn btn-primary">Go</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="span4">
+          </div>
+        </div>
       </div>
     </div>
 

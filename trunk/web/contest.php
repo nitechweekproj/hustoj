@@ -237,8 +237,11 @@
 /////////////////////////Template
 if(isset($_GET['cid']))
 	require("template/".$OJ_TEMPLATE."/contest.php");
-else
-	require("template/".$OJ_TEMPLATE."/contestset.php");
+else{
+	if (isset($_SESSION["administrator"])){
+		require("template/".$OJ_TEMPLATE."/contestset.php");
+	}
+}
 /////////////////////////Common foot
 if(file_exists('./include/cache_end.php'))
 	require_once('./include/cache_end.php');

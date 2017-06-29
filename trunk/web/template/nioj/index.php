@@ -37,18 +37,39 @@
               <div class="controls">
                 <input name="password" class="input-xfat" placeholder="<?php echo $MSG_PASSWORD?>" type="password">
               </div>
+            </div>
+            <div class="control-group">
               <label class="control-label"></label>
               <button type="submit" class="sui-btn btn-xlarge btn-primary"><?php echo $MSG_LOGIN; ?></button>
             </div>
-          </form>       
+          </form> 
+          <p class="sui-lead">Or register a new user account</p>
+          <form action="register.php" method="post" role="form" class="sui-form form-horizontal">
+            <div class="control-group">
+              <label class="control-label"><?php echo $MSG_USER_ID?></label>
+              <div class="controls">
+                <input name="user_id" class="input-xfat" placeholder="<?php echo $MSG_USER_ID?>" type="text">
+              </div>
+              <label class="control-label"><?php echo $MSG_PASSWORD?></label>
+              <div class="controls">
+                <input name="password" class="input-xfat" placeholder="<?php echo $MSG_PASSWORD?>" type="password">
+                <input name="rptpassword" class="input-xfat" placeholder="Repeat Password" type="password">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label"></label>
+              <button type="submit" class="sui-btn btn-xlarge btn-primary">Sign Up</button>
+            </div>
+          </form>    
         </div> <!-- /container -->
         <?php }else{ if(!isset($_SESSION['administrator'])){?>
           <div class="sui-container" style="margin-top:20px">  
             <?php require("contest.php"); ?>
+            <?php require("template/$OJ_TEMPLATE/contestset_frame.php"); ?>
           </div>
         <?php } else{?>
           <div class="sui-container" style="margin-top:20px">  
-            <p class="sui-lead">For administration functions, go to user->Admin</p>
+            <h3>For administration functions, please go to <a href="admin">Admin</a></h3>
           </div>
         <?php }}?>
       </div>
