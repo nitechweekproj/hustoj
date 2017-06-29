@@ -95,7 +95,7 @@ else{
 			}
 			
    }
-else if(isset($_POST['problem2contest'])){
+	else if(isset($_POST['problem2contest'])){
 	   $plist="";
 	   //echo $_POST['pid'];
 	   sort($_POST['pid']);
@@ -105,7 +105,7 @@ else if(isset($_POST['problem2contest'])){
 			else
 				$plist=$i;
 	   }
-}else if(isset($_GET['spid'])){
+	}else if(isset($_GET['spid'])){
 	require_once("../include/check_get_key.php");
 		   $spid=intval($_GET['spid']);
 		 
@@ -116,10 +116,8 @@ else if(isset($_POST['problem2contest'])){
 				if ($plist) $plist.=',';
 				$plist.=$row[0];
 			}
-			
-}  
-  include_once("kindeditor.php") ;
-?>
+	}  
+  include_once("kindeditor.php") ;?>
 
 	<center>
 		<h2 class="sui-page-header">Add Onsite Interview</h2>
@@ -229,6 +227,5 @@ else if(isset($_POST['problem2contest'])){
 	        </div>
 	    </div>
 	</form>
-
-<php }?>
+<?php }?>
 
