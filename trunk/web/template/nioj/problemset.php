@@ -82,14 +82,24 @@
           <li class="next"><a href="problemset.php?page=<?php echo $view_total_page?>">&gt;&gt;</a></li>
         </ul>
       </div>
-      <form role="form" action=problem.php class="sui-form  form-horizontal" align="center">
-            <div class="control-group">
-              <input name='id' type=text placeholder="Problem ID" class="input-default">
-              <div class="controls">
-                <button type="submit" class="sui-btn btn-primary">Go</button>
+      <div class="grid-demo">
+        <div class="sui-row">
+          <div class="span4">
+          </div>
+          <div class="span4">
+            <form role="form" action=problem.php class="sui-form  form-horizontal" align="center">
+              <div class="control-group">
+                <input name='id' type=text placeholder="Problem ID" class="input-default">
+                <div class="controls">
+                  <button type="submit" class="sui-btn btn-primary">Go</button>
+                </div>
               </div>
-            </div>
-      </form>
+            </form>
+          </div>
+          <div class="span4">
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap core JavaScript
