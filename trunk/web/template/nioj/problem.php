@@ -43,19 +43,19 @@
       }
       echo "</center>";?>
 
-      <div class="sui-container" style="margin-top:20px">
+      <div class="sui-container" style="margin-top:20px;width:80%">
         <ul class="sui-nav nav-tabs tab-wraped">
           <li class="active"><a href="#desc" data-toggle="tab">
-            <p>Description</p>
+            <h3>Description</h3>
           </a></li>
           <li><a href="#args" data-toggle="tab">
-            <p>Arguments</p>
+            <h3>Arguments</h3>
           </a></li>
           <li><a href="#example" data-toggle="tab">
-            <p>Example</p>
+            <h3>Example</h3>
           </a></li>
           <li><a href="#hints" data-toggle="tab">
-            <p>Hints</p>
+            <h3>Hints</h3>
           </a></li>
         </ul>
       </div>
