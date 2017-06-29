@@ -30,14 +30,6 @@
           </div>
         </div>
       </form>
-      <form role="form" action=problem.php class="sui-form  form-horizontal" style="display:inline">
-        <div class="control-group">
-          <input name='id' type=text placeholder="Problem ID" class="input-default">
-          <div class="controls">
-            <button type="submit" class="sui-btn btn-primary">Go</button>
-          </div>
-        </div>
-      </form>
     </center>
     <div class="sui-container">
 
@@ -65,7 +57,9 @@
         ?>
         </tbody>
       </table>
-      <div class="sui-pagination">
+    </div>
+    <center>
+      <div class="sui-pagination" style="display:inline">
         <ul>
           <li class="prev"><a href="problemset.php?page=1">&lt;&lt;</a></li>
           <?php
@@ -82,7 +76,15 @@
           <li class="next"><a href="problemset.php?page=<?php echo $view_total_page?>">&gt;&gt;</a></li>
         </ul>
       </div>
-    </div>
+      <form role="form" action=problem.php class="sui-form  form-horizontal" style="display:inline">
+        <div class="control-group">
+          <input name='id' type=text placeholder="Problem ID" class="input-default">
+          <div class="controls">
+            <button type="submit" class="sui-btn btn-primary">Go</button>
+          </div>
+        </div>
+      </form>
+    </center>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
