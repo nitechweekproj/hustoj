@@ -133,15 +133,15 @@ else{
 	    	<lable class="control-label">Start Time:</lable>
 	    	<div class="controls">
 	    		Year:
-	            <input class="input-mini input-xfat" type=text name=syear value=<?php echo date('y')?> size=4>
+	            <input class="input-xfat" type=text name=syear value=<?php echo date('y')?> size=4>
 	            Month:
-	            <input class="input-mini input-xfat" type=text name=smonth value=<?php echo date('m')?> size=2 >
+	            <input class="input-xfat" type=text name=smonth value=<?php echo date('m')?> size=2 >
 	            Day:
-	            <input class="input-mini input-xfat" type=text name=sday size=2 value=<?php echo date('d')?> >
+	            <input class="input-xfat" type=text name=sday size=2 value=<?php echo date('d')?> >
 	            Hour:
-	            <input class="input-mini input-xfat" type=text name=shour size=2 value=<?php echo date('H')?>>
+	            <input class="input-xfat" type=text name=shour size=2 value=<?php echo date('H')?>>
 	            Minute:
-	            <input class="input-mini input-xfat" type=text name=sminute value=00 size=2 ></p>
+	            <input class="input-xfat" type=text name=sminute value=00 size=2 ></p>
 	        </div>
 	    </div>
 	    <div class="control-group">
@@ -208,13 +208,16 @@ else{
 	    <div class="control-group">
 	    	<lable class="control-label">Users:</lable>
 	    	<div class="controls">
-	    		<textarea name="ulist" rows="5" cols="10"></textarea>
+	    		<textarea name="ulist" rows="3" cols="80"></textarea>
 	        </div>
 	    </div>
 
 	    <div class="control-group">
 	    	<div class="controls">
-	    		<input type=submit value=Submit name=submit><input type=reset value=Reset name=reset>
+	    		<center>
+		    		<input type=submit value=Submit name=submit class="sui-btn btn-large btn-primary">
+		    		<input type=reset value=Reset name=reset class="sui-btn btn-large btn-primary">
+	    		</center>
 	        </div>
 	    </div>
 	</form>
