@@ -33,7 +33,7 @@
           echo "<center><h2>$MSG_PROBLEM ".$PID[$pid].": ".$row['title']."</h2>";
         }
         echo "<span class=sui-text-info>$MSG_Time_Limit: </span>".$row['time_limit']." Sec&nbsp;&nbsp;";
-        echo "<span class=sui-text-info>$MSG_Memory_Limit: </span>".$row['memory_limit']." MB";
+        echo "<span class=sui-text-info>$MSG_Memory_Limit: </span>".$row['memory_limit']." MB&nbsp;&nbsp;";
         if ($pr_flag){
           echo "[<a href='submitpage.php?id=$id'>$MSG_SUBMIT</a>]";
         }else{
@@ -73,8 +73,7 @@
       }else{
         echo "[<a href='submitpage.php?cid=$cid&pid=$pid&langmask=$langmask'>$MSG_SUBMIT</a>]";
       }
-      echo "[<a href='problemstatus.php?id=".$row['problem_id']."'>$MSG_STATUS</a>]";
-      //echo "[<a href='bbs.php?pid=".$row['problem_id']."$ucid'>$MSG_BBS</a>]";
+
       if(isset($_SESSION['administrator'])){
       require_once("include/set_get_key.php");
       ?>
