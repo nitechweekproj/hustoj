@@ -17,7 +17,7 @@ header("Pragma: no-cache");
 				$sid=$_SESSION['user_id'];
 				$profile.= "<li role='presentation'><a role='menuitem' tabindex='-1' href=".$path_fix."logout.php>$MSG_LOGOUT</a></li>&nbsp;";
 		}else{
-			$profile.= "<li role='presentation'><a role='menuitem' tabindex='-1' href='#'>$MSG_LOGIN</a></li>&nbsp;";
+			$profile.= "<li role='presentation'><a role='menuitem' tabindex='-1' href=".$path_fix."index.php>$MSG_LOGIN</a></li>&nbsp;";
 		}
 		if (isset($_SESSION['administrator'])){
            $profile.= "<li role='presentation'><a role='menuitem' tabindex='-1' href=".$path_fix."admin/>$MSG_ADMIN</a></li>&nbsp;";
