@@ -132,40 +132,31 @@ else{
 	    <div class="control-group">
 	    	<lable class="control-label">Start Time:</lable>
 	    	<div class="controls">
-	    		<p>Year:</p>
-	            <input class="input-mini input-xfat" type=text name=syear value="<?php echo isset($title)?$title:""?>">
-	            <p>Month:</p>
+	    		Year:
+	            <input class="input-mini input-xfat" type=text name=syear value=<?php echo date('y')?> size=4>
+	            Month:
 	            <input class="input-mini input-xfat" type=text name=smonth value=<?php echo date('m')?> size=2 >
-	            <p>Day:</p>
+	            Day:
 	            <input class="input-mini input-xfat" type=text name=sday size=2 value=<?php echo date('d')?> >
-	            <p>Hour:</p>
+	            Hour:
 	            <input class="input-mini input-xfat" type=text name=shour size=2 value=<?php echo date('H')?>>
-	            <p>Minute:</p>
+	            Minute:
 	            <input class="input-mini input-xfat" type=text name=sminute value=00 size=2 ></p>
 	        </div>
 	    </div>
 	    <div class="control-group">
 	    	<lable class="control-label">End Time:</lable>
 	    	<div class="controls">
-	    		<p>Year:</p>
-	            <input class="input-mini input-xfat" type=text name=eyear value="<?php echo isset($title)?$title:""?>">
-	            <p>Month:</p>
+	    		Year:
+	            <input class="input-mini input-xfat" type=text name=eyear value=<?php echo date('y')?> size=4>
+	            Month:
 	            <input class="input-mini input-xfat" type=text name=emonth value=<?php echo date('m')?> size=2 >
-	            <p>Day:</p>
-	            <input class="input-mini input-xfat" type=text name=eday size=2 value=<?phpecho date('d')+(date('H')+4>23?1:0)?> >
-	            <p>Hour:</p>
+	            Day:
+	            <input class="input-mini input-xfat" type=text name=eday size=2 value=<?php echo date('d')+(date('H')+4>23?1:0)?> >
+	            Hour:
 	            <input class="input-mini input-xfat" type=text name=ehour size=2 value=<?php echo (date('H')+2)%24?>>
-	            <p>Minute:</p>
+	            Minute:
 	            <input class="input-mini input-xfat" type=text name=eminute value=00 size=2 ></p>
-	        </div>
-	    </div>
-	    <div class="control-group">
-	    	<lable class="control-label">Public:</lable>
-	    	<div class="controls">
-	    		<select name=private>
-	 				<option value=0>Public</option>
-	  				<option value=1>Private</option>
-	  			</select>
 	        </div>
 	    </div>
 
@@ -179,14 +170,14 @@ else{
 	        </div>
 	        <lable class="control-label">Password:</lable>
 	        <div class="controls">
-	        	<input type=text name=password value="">
+	        	<input type=text class="input-large" name=password value="">
 	        </div>
 	    </div>
 
 	    <div class="control-group">
 	    	<lable class="control-label">Language:</lable>
 	    	<div class="controls">
-	            <select name="lang[]" multiple="multiple" style="height:20px">
+	            <select name="lang[]" multiple="multiple" style="height:200px">
 		            <?php
 						$lang_count=count($language_ext);
 	 					$langmask=$OJ_LANGMASK;
