@@ -120,56 +120,113 @@ else if(isset($_POST['problem2contest'])){
 }  
   include_once("kindeditor.php") ;
 ?>
-	
-	<form method=POST >
+
+<center>
 	<h2 class="sui-page-header">Add Onsite Interview</h2>
-	<p align=left>Title:<input class=input-xxlarge  type=text name=title size=71 value="<?php echo isset($title)?$title:""?>"></p>
-	<p align=left>Start Time:<br>&nbsp;&nbsp;&nbsp;
-	Year:<input  class=input-mini type=text name=syear value=<?php echo date('Y')?> size=4 >
-	Month:<input class=input-mini  type=text name=smonth value=<?php echo date('m')?> size=2 >
-	Day:<input class=input-mini type=text name=sday size=2 value=<?php echo date('d')?> >&nbsp;
-	Hour:<input class=input-mini    type=text name=shour size=2 value=<?php echo date('H')?>>&nbsp;
-	Minute:<input class=input-mini    type=text name=sminute value=00 size=2 ></p>
-	<p align=left>End Time:<br>&nbsp;&nbsp;&nbsp;
-	Year:<input class=input-mini type=text name=eyear value=<?php echo date('Y')?> size=4 >
-	Month:<input class=input-mini type=text name=emonth value=<?php echo date('m')?> size=2 >
-	Day:<input class=input-mini  type=text name=eday size=2 value=<?php echo date('d')+(date('H')+4>23?1:0)?>>&nbsp;
-	Hour:<input class=input-mini  type=text name=ehour size=2 value=<?php echo (date('H')+4)%24?>>&nbsp;
-	Minute:<input class=input-mini type=text name=eminute value=00 size=2 ></p>
-	<p>Public:<select name=private>
-     <option value=0>Public</option>
-	  <option value=1>Private</option></select>
-	</p>
-	<p>Password:<input type=text name=password value=""></p>
-	<p>Language:<select name="lang[]" multiple="multiple" style="height:20px"></p>
-	<?php
-$lang_count=count($language_ext);
+</center>
+<form class="sui-form form-horizontal" method=post>
+	<div class="control-group">
+		<lable class="control-label">Title:</lable>
+     	<div class="controls">
+        	<input type=text name=title class="input-xlarge input-xfat" value="<?php echo isset($title)?$title:""?>">
+     	</div>
+    </div>
+    <div class="control-group">
+    	<lable class="control-label">Start Time:</lable>
+    	<div class="controls">
+    		<p>Year:</p>
+            <input class="input-mini input-xfat" type=text name=syear value="<?php echo isset($title)?$title:""?>">
+            <p>Month:</p>
+            <input class="input-mini input-xfat" type=text name=smonth value=<?php echo date('m')?> size=2 >
+            <p>Day:</p>
+            <input class="input-mini input-xfat" type=text name=sday size=2 value=<?php echo date('d')?> >
+            <p>Hour:</p>
+            <input class="input-mini input-xfat" type=text name=shour size=2 value=<?php echo date('H')?>>
+            <p>Minute:</p>
+            <input class="input-mini input-xfat" type=text name=sminute value=00 size=2 ></p>
+        </div>
+    </div>
+    <div class="control-group">
+    	<lable class="control-label">End Time:</lable>
+    	<div class="controls">
+    		<p>Year:</p>
+            <input class="input-mini input-xfat" type=text name=eyear value="<?php echo isset($title)?$title:""?>">
+            <p>Month:</p>
+            <input class="input-mini input-xfat" type=text name=emonth value=<?php echo date('m')?> size=2 >
+            <p>Day:</p>
+            <input class="input-mini input-xfat" type=text name=eday size=2 value=<?phpecho date('d')+(date('H')+4>23?1:0)?> >
+            <p>Hour:</p>
+            <input class="input-mini input-xfat" type=text name=ehour size=2 value=<?php echo (date('H')+2)%24?>>
+            <p>Minute:</p>
+            <input class="input-mini input-xfat" type=text name=eminute value=00 size=2 ></p>
+        </div>
+    </div>
+    <div class="control-group">
+    	<lable class="control-label">Public:</lable>
+    	<div class="controls">
+    		<select name=private>
+ 				<option value=0>Public</option>
+  				<option value=1>Private</option>
+  			</select>
+        </div>
+    </div>
 
- $langmask=$OJ_LANGMASK;
+    <div class="control-group">
+    	<lable class="control-label">Public:</lable>
+    	<div class="controls">
+    		<select name=private>
+ 				<option value=0>Public</option>
+  				<option value=1>Private</option>
+  			</select>
+        </div>
+        <lable class="control-label">Password:</lable>
+        <div class="controls">
+        	<input type=text name=password value="">
+        </div>
+    </div>
 
- for($i=0;$i<$lang_count;$i++){
-                 echo "<option value=$i selected>
-                        ".$language_name[$i]."
-                 </option>";
-  }
+    <div class="control-group">
+    	<lable class="control-label">Language:</lable>
+    	<div class="controls">
+            <select name="lang[]" multiple="multiple" style="height:20px">
+	            <?php
+					$lang_count=count($language_ext);
+ 					$langmask=$OJ_LANGMASK;
+ 					for($i=0;$i<$lang_count;$i++){
+                 		echo "<option value=$i selected>
+                        	".$language_name[$i]."
+                 		</option>";
+  					}?>
+  			</select>
+        </div>
+    </div>
+    <?php require_once("../include/set_post_key.php");?>
 
-?>
+    <div class="control-group">
+    	<lable class="control-label">Problems:</lable>
+    	<div class="controls">
+    		<input class=input-xlarge placeholder="Example:1000,1001,1002" type=text name=cproblem value="<?php echo isset($plist)?$plist:""?>">
+        </div>
+    </div>
 
+    <div class="control-group">
+    	<lable class="control-label">Description:</lable>
+    	<div class="controls">
+    		<textarea class=kindeditor rows=13 name=description cols=80></textarea>
+        </div>
+    </div>
 
-        </select>
-	<?php require_once("../include/set_post_key.php");?>
-	<br>Problems:<input class=input-xxlarge placeholder="Example:1000,1001,1002" type=text size=60 name=cproblem value="<?php echo isset($plist)?$plist:""?>">
-	<br>
-	<p align=left>Description:<br><textarea class=kindeditor rows=13 name=description cols=80></textarea>
+    <div class="control-group">
+    	<lable class="control-label">Users:</lable>
+    	<div class="controls">
+    		<textarea name="ulist" rows="5" cols="10"></textarea>
+        </div>
+    </div>
 
-
-	Users:<textarea name="ulist" rows="20" cols="20"></textarea>
-	<br />
-	*可以将学生学号从Excel整列复制过来，然后要求他们用学号做UserID注册,就能进入Private的比赛作为作业和测验。
-	<p><input type=submit value=Submit name=submit><input type=reset value=Reset name=reset></p>
-	</form>
-<?php }
-require_once("../oj-footer.php");
-
-?>
+    <div class="control-group">
+    	<div class="controls">
+    		<input type=submit value=Submit name=submit><input type=reset value=Reset name=reset>
+        </div>
+    </div>
+</form>
 
