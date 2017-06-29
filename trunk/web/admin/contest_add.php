@@ -123,46 +123,46 @@ else{
 	<h2 class="sui-page-header">Add Onsite Interview</h2>
 	<form class="sui-form form-horizontal" method=post>
 		<div class="control-group">
-			<lable class="control-label">Title:</lable>
+			<label class="control-label">Title:</label>
 	     	<div class="controls">
 	        	<input type=text name=title class="input-xlarge input-xfat" value="<?php echo isset($title)?$title:""?>">
 	     	</div>
 	    </div>
 	    <div class="control-group">
-	    	<lable class="control-label">Start Time:</lable>
+	    	<label class="control-label">Start Time:</label>
 	    	<div class="controls">
-	            <lable>Hour</lable>
+	            <label>Hour</label>
 	            <input class="input-xfat" type=text name=shour size=2 value=<?php echo date('H')?>>
-	            <lable>Minute</lable>
+	            <label>Minute</label>
 	            <input class="input-xfat" type=text name=sminute value=00 size=2 ></p>
 	        </div>
 	    </div>
 	    <div class="control-group">
-	    	<lable class="control-label">End Time:</lable>
+	    	<label class="control-label">End Time:</label>
 	    	<div class="controls">
-	            <lable>Hour</lable>
+	            <label>Hour</label>
 	            <input class="input-xfat" type=text name=ehour size=2 value=<?php echo (date('H')+2)%24?>>
-	            <lable>Minute</lable>
+	            <label>Minute</label>
 	            <input class="input-xfat" type=text name=eminute value=00 size=2 ></p>
 	        </div>
 	    </div>
 
 	    <div class="control-group">
-	    	<lable class="control-label">Public:</lable>
+	    	<label class="control-label">Public:</label>
 	    	<div class="controls">
 	    		<select name=private>
 	 				<option value=0>Public</option>
 	  				<option value=1>Private</option>
 	  			</select>
 	        </div>
-	        <lable class="control-label">Password:</lable>
+	        <label class="control-label">Password:</label>
 	        <div class="controls">
 	        	<input type=text class="input-large" name=password value="">
 	        </div>
 	    </div>
 
 	    <div class="control-group">
-	    	<lable class="control-label">Language:</lable>
+	    	<label class="control-label">Language:</label>
 	    	<div class="controls">
 	            <select name="lang[]" multiple="multiple" style="height:100px;width:100px">
 		            <?php
@@ -179,21 +179,21 @@ else{
 	    <?php require_once("../include/set_post_key.php");?>
 
 	    <div class="control-group">
-	    	<lable class="control-label">Problems:</lable>
+	    	<label class="control-label">Problems:</label>
 	    	<div class="controls">
 	    		<input class=input-xlarge placeholder="Example:1000,1001,1002" type=text name=cproblem value="<?php echo isset($plist)?$plist:""?>">
 	        </div>
 	    </div>
 
 	    <div class="control-group">
-	    	<lable class="control-label">Description:</lable>
+	    	<label class="control-label">Description:</label>
 	    	<div class="controls">
 	    		<textarea class=kindeditor rows=13 name=description cols=80></textarea>
 	        </div>
 	    </div>
 
 	    <div class="control-group">
-	    	<lable class="control-label">Users:</lable>
+	    	<label class="control-label">Users:</label>
 	    	<div class="controls">
 	    		<textarea name="ulist" rows="3" cols="80"></textarea>
 	        </div>
