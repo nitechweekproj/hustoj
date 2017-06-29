@@ -42,7 +42,7 @@
       <?php
       }
       echo "</center>";?>
-      
+
       <center>
       <?php
       if ($pr_flag){
@@ -61,7 +61,7 @@
       </center>
 
       <div class="sui-container" style="margin-top:20px;width:80%">
-        <ul class="sui-nav nav-tabs tab-wraped">
+        <ul class="sui-nav nav-tabs nav-large">
           <li class="active"><a href="#desc" data-toggle="tab">
             <h3>Description</h3>
           </a></li>
@@ -75,7 +75,7 @@
             <h3>Hints</h3>
           </a></li>
         </ul>
-        <div class="tab-content tab-wraped">
+        <div class="tab-content">
           <div id="desc" class="tab-pane active">
             <?php
               echo "<div class=sui-text-xlarge>".$row['description']."</div>";?>
