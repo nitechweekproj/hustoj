@@ -43,7 +43,7 @@
       }
       echo "</center>";?>
 
-      <div class="sui-container" style="margin-top:20px;width:80%">
+      <div class="sui-container" style="margin-top:20px;width:80%;height:60px">
         <ul class="sui-nav nav-tabs tab-wraped">
           <li class="active"><a href="#desc" data-toggle="tab">
             <h3>Description</h3>
@@ -60,7 +60,7 @@
         </ul>
       </div>
 
-      <div class="tab-content tab-wraped">
+      <div class="tab-content tab-wraped" style="width:80%">
         <div id="desc" class="tab-pane active">
           <?php
             echo "<div class=sui-text-xlarge>".$row['description']."</div>";?>
