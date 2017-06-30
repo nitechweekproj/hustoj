@@ -34,7 +34,7 @@ while(list($key, $val)=each($rightarray)) {
 	<input class="sui-btn btn-primary" type=submit value='Add'>
 </form>
 <form method=post>
-	<b>Add contest for User:</b><br />
+	<b>Add Interview for User:</b><br />
 	User:<input type=text name="user_id"><br />
 	Interview:<input type=text name="rightstr">interview title<br />
 	<input type='hidden' name='do' value='do'>
