@@ -102,8 +102,7 @@
           </div>
           <div id="hints" class="tab-pane">
             <?php
-              echo "<h2>$MSG_HINT</h2>
-              <div class=sui-text-large><p>".nl2br($row['hint'])."</p></div>";?>
+              echo "<div class=sui-text-large><p>".nl2br($row['hint'])."</p></div>";?>
           </div>
         </div>
       </div>
