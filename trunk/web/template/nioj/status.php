@@ -22,7 +22,7 @@
   <body>
     <?php include("template/$OJ_TEMPLATE/nav.php");?>	    
     <div id=center class="sui-container">
-      <table id=result-tab class="sui-table table-zebra table-bordered" align=center width=80%>
+      <table id=result-tab class="sui-table table-zebra" align=center width=80%>
         <thead>
           <tr>
             <th><?php echo $MSG_RUNID?>
@@ -60,7 +60,8 @@
       ?>
       </div>
   </div>
-  <?php require("template/$OJ_TEMPLATE/nioj_footer.php");?>  
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
