@@ -33,7 +33,7 @@
             <li <?php if ($url == $contest_tab) echo " $ACTIVE";?>><a href="<?php echo $path_fix?>contest.php?cid=<?php echo $cid?>">
               Interview Questions
             </a></li>
-            <li <?php if ($url == $status_tab) echo " $ACTIVE";?>><a href="<?php echo $path_fix?>status.php?cid=<?php echo $cid?>">
+            <li <?php if ($url == $status_tab) echo " $ACTIVE";?>><a href="<?php echo $path_fix?>status.php?user_id=<?php echo $_SESSION['user_id']?>">
               Sumission Status
             </a></li>
       <?php }?>
