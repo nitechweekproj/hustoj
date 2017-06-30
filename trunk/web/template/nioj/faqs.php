@@ -175,7 +175,7 @@ If you can't, then please <a href=registerpage.php>register</a> an id with passw
 
     </div> <!-- /container -->
 
-<?php require("template/$OJ_TEMPLATE/nioj_footer.php");?>  
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
