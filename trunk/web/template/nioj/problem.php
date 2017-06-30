@@ -66,13 +66,12 @@
             <h3>Description</h3>
           </a></li>
           <li><a href="#args" data-toggle="tab">
-            <h3>Arguments</h3>
+            <h3>In&Out</h3>
           </a></li>
           <li><a href="#example" data-toggle="tab">
             <h3>Example</h3>
           </a></li>
           <li><a href="#hints" data-toggle="tab">
-            <h3>Hints</h3>
           </a></li>
         </ul>
         <div class="tab-content">
