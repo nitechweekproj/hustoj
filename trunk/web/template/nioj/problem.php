@@ -114,7 +114,7 @@
 
     </div> <!-- /container -->
 
-
+<?php require("template/$OJ_TEMPLATE/nioj_footer.php");?> 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
