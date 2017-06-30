@@ -102,7 +102,7 @@
           </div>
           <div id="hints" class="tab-pane">
             <?php
-              echo "<div class=sui-text-large><p>".nl2br($row['hint'])."</p></div>";?>
+              echo "<div class=sui-text-large>".nl2br($row['hint'])."</div>";?>
           </div>
         </div>
       </div>
