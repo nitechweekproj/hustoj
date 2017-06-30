@@ -72,6 +72,7 @@
             <h3>Example</h3>
           </a></li>
           <li><a href="#hints" data-toggle="tab">
+            <h3>Hints</h3>
           </a></li>
         </ul>
         <div class="tab-content">
