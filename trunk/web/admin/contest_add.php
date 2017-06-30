@@ -121,7 +121,7 @@ else{
 
 
 	<h2 class="sui-page-header">Add Onsite Interview</h2>
-	<form class="sui-form form-horizontal" method=post>
+	<form class="sui-form form-horizontal" method=POST>
 		<div class="control-group">
 			<label for="inputTitile" class="control-label">Title:</label>
 	     	<div class="controls">
@@ -131,6 +131,9 @@ else{
 	    <div class="control-group">
 	    	<label class="control-label">Start Time:</label>
 	    	<div class="controls">
+	            <input class="input-xfat" type=hidden name=shour size=2 value=<?php echo date('Y')?>>
+	            <input class="input-xfat" type=hidden name=sminute value=<?php echo date('m')?> size=2 ></p>
+	            <input class="input-xfat" type=hidden name=shour size=2 value=<?php echo date('d')?>>
 	            <label>Hour</label>
 	            <input class="input-xfat" type=text name=shour size=2 value=<?php echo date('H')?>>
 	            <label>Minute</label>
@@ -140,6 +143,9 @@ else{
 	    <div class="control-group">
 	    	<label class="control-label">End Time:</label>
 	    	<div class="controls">
+	    		<input class="input-xfat" type=hidden name=ehour size=2 value=<?php echo date('Y')?>>
+	            <input class="input-xfat" type=hidden name=eminute value=<?php echo date('m')?> size=2 ></p>
+	            <input class="input-xfat" type=hidden name=ehour size=2 value=<?php echo date('d')?>>
 	            <label>Hour</label>
 	            <input class="input-xfat" type=text name=ehour size=2 value=<?php echo (date('H')+2)%24?>>
 	            <label>Minute</label>
