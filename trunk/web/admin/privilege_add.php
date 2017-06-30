@@ -13,7 +13,7 @@ if(isset($_POST['do'])){
 	
 }
 ?>
-<h2 class="sui-page-header">Add Privilege or Contest to User</h2>
+<h2 class="sui-page-header">Add Privilege or Interview to User</h2>
 <form method=post>
 <?php require("../include/set_post_key.php");?>
 	<b>Add privilege for User:</b><br />
@@ -31,13 +31,13 @@ while(list($key, $val)=each($rightarray)) {
 }
 ?></select><br />
 	<input type='hidden' name='do' value='do'>
-	<input class="sui-btn btn-large btn-primary" type=submit value='Add'>
+	<input class="sui-btn btn-primary" type=submit value='Add'>
 </form>
 <form method=post>
 	<b>Add contest for User:</b><br />
 	User:<input type=text name="user_id"><br />
-	Contest:<input type=text name="rightstr"> c1000 for Contest1000<br />
+	Interview:<input type=text name="rightstr">interview title<br />
 	<input type='hidden' name='do' value='do'>
-	<input class="sui-btn btn-large btn-primary" type=submit value='Add'>
+	<input class="sui-btn btn-primary" type=submit value='Add'>
 	<input type=hidden name="postkey" value="<?php echo $_SESSION['postkey']?>">
 </form>
